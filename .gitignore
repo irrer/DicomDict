@@ -1,0 +1,6 @@
+# Vim stuff
+*~
+.*.sw?
+
+target/
+

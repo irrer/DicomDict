@@ -1,0 +1,637 @@
+<PrivateTagConfig>
+    <Manufacturer>
+	<Name>Varian Medical Systems</Name>
+    </Manufacturer>
+    <PrivateTagList>
+        <PrivateTag name='!-- Varian private tags -->
+        <PrivateTag name='ExtendedInterfaceData'                      group='3253' element='1000' vr='OB' fullName='Varian XML Stream'/>
+        <PrivateTag name='ExtendedInterfaceLength'                    group='3253' element='1001' vr='IS' fullName='Varian Data length of XML stream'/>
+        <PrivateTag name='ExtendedInterfaceFormat'                    group='3253' element='1002' vr='CS' fullName='Varian Extended Interface Format tag.  A possible falue is ExtendedIF'/>
+        <PrivateTag name='BeamSecondaryName'                          group='3243' element='1009' vr='LO' fullName='Varian Second user defined beam name'/>
+        <PrivateTag name='MaximumTreatmentTime'                       group='3249' element='1000' vr='DS' fullName='Varian Maximum treament time in minutes.  Serves as secondary safety limit to 300A,0086'/>
+        <PrivateTag name='TreatmentMachineNote'                       group='3251' element='1000' vr='LO' fullName='Varian Description of treatment machine details'/>
+        <PrivateTag name='TreatmentSessionBeamData'                   group='3261' element='102A' vr='OB' fullName='Varian Extended interface in XML'/>
+        <PrivateTag name='RelatedReferenceBeamNumber'                 group='3243' element='1028' vr='IS' fullName='Varian If TreatmentDeliveryType is OPEN_PORTFILM or TRMT_PORTFILM then use the Related Referenced Beam Number instead of 300C,0006'/>
+        <PrivateTag name='AdditionalDoseValueSequence'                group='3259' element='1000' vr='SQ' fullName='Varian Addtional Session Dose, one or more items'/>
+        <PrivateTag name='ActualSessionDose'                          group='3259' element='1002' vr='DS' fullName='Varian Session Dose Delivered of Actual Session.  Required if Actual Session Dose Seq is sent'/>
+        <PrivateTag name='DailyDose'                                  group='3259' element='1004' vr='DS' fullName='Varian Daily Dose of current day.  Required if Actual Session Dose Seq is sent'/>
+        <PrivateTag name='LifeTimeTotalDose'                          group='3259' element='1006' vr='DS' fullName='Varian Total Dose of Reference Point over all plans.  Required if Actual Session Dose Seq is sent'/>
+        <PrivateTag name='TotalNumberOfFractions'                     group='3265' element='1000' vr='SL' fullName='Varian Total number of Fractions planned for the current plan and al its former plans'/>
+        <PrivateTag name='LastTreatedFraction'                        group='3265' element='1001' vr='SL' fullName='Varian The index of the lst fraction treated across the current and all its former plans'/>
+        <PrivateTag name='VarianCreator3249'                          group='3249' element='0010' vr='LO' fullName='Varian Creator 3249'/>
+        <PrivateTag name='VarianCreator3267'                          group='3267' element='0010' vr='LO' fullName='Varian Creator 3267'/>
+        <PrivateTag name='ReferencedPatientVolumeID'                  group='3267' element='1000' vr='SH' fullName='Referenced Patient Volume ID'/>
+        <PrivateTag name='VarianCreator3253'                          group='3253' element='0010' vr='LO' fullName='Varian Creator 3253'/>
+        <PrivateTag name='ReferencedPrimaryDoseRefUID'                group='3249' element='1010' vr='UI' fullName='Referenced Primary Dose Reference UID'/>
+        <PrivateTag name='VarianCreator3285'                          group='3285' element='0010' vr='LO' fullName='Varian Creator 3285'/>
+        <PrivateTag name='PrimaryFluenceModeSequence'                 group='3285' element='1000' vr='SQ' fullName='Primary Fluence Mode Sequence'/>
+        <PrivateTag name='FluenceMode'                                group='3285' element='1001' vr='CS' fullName='Fluence Mode'/>
+        <PrivateTag name='FluenceModeID'                              group='3285' element='1002' vr='SH' fullName='Fluence Mode ID'/>
+        <PrivateTag name='VarianCreator3287'                          group='3287' element='0010' vr='LO' fullName='Varian Creator 3287'/>
+        <PrivateTag name='PlanIntegritySequence'                      group='3287' element='1000' vr='SQ' fullName='Plan Integrity Sequence'/>
+        <PrivateTag name='PlanIntegrityHash'                          group='3287' element='1001' vr='LO' fullName='Plan Integrity Hash'/>
+        <PrivateTag name='PlanIntegrityHashVersion'                   group='3287' element='1002' vr='SH' fullName='Plan Integrity Hash Version'/>
+        <PrivateTag name='VarianCreator3273'                          group='3273' element='0010' vr='LO' fullName='Varian Creator 3273'/>
+        <PrivateTag name='RTImageIsocenterPosition'                   group='3273' element='1000' vr='DS' fullName='RTImage Isocenter Position'/>
+        <PrivateTag name='RTImagePatientPosition'                     group='3273' element='1001' vr='CS' fullName='RTImage Patient Position'/>
+        <PrivateTag name='VarianCreator3263'                          group='3263' element='0010' vr='LO' fullName='Varian Creator 3263'/>
+        <PrivateTag name='ReferencedStructureSetRelnSeq'              group='3263' element='1001' vr='SQ' fullName='Referenced Structure Set Relationship Sequence'/>
+        <PrivateTag name='StructureSetRelationship'                   group='3263' element='1002' vr='CS' fullName='Structure Set Relationship'/>
+        <PrivateTag name='VarianCreator3243'                          group='3243' element='0010' vr='LO' fullName='Varian Creator 3243'/>
+        <PrivateTag name='VarianCreator3291'                          group='3291' element='0010' vr='LO' fullName='Varian Creator 3291'/>
+        <PrivateTag name='SourceToGeneralAccessoryDist'               group='3291' element='1000' vr='DS' fullName='Source To General Accessory Distance '/>
+
+        <PrivateTag name='CurveDimensions'                            group='5000:50fe:2' element='0005' vr='US' fullName='Curve Dimensions'         />
+        <PrivateTag name='NumberOfPoints'                             group='5000:50fe:2' element='0010' vr='US' fullName='Number Of Points'         />
+        <PrivateTag name='TypeOfData'                                 group='5000:50fe:2' element='0020' vr='CS' fullName='Type Of Data'             />
+        <PrivateTag name='CurveDescription'                           group='5000:50fe:2' element='0022' vr='LO' fullName='Curve Description'        />
+        <PrivateTag name='AxisUnits'                                  group='5000:50fe:2' element='0030' vr='SH' fullName='Axis Units'               />
+        <PrivateTag name='AxisLabels'                                 group='5000:50fe:2' element='0040' vr='SH' fullName='Axis Labels'              />
+        <PrivateTag name='DataValueRepresentation'                    group='5000:50fe:2' element='0103' vr='US' fullName='Data Value Representation'/>
+        <PrivateTag name='CurveLabel'                                 group='5000:50fe:2' element='2500' vr='LO' fullName='Curve Label'              />
+        <PrivateTag name='CurveData'                                  group='5000:50fe:2' element='3000' vr='OX' fullName='Curve Data'               />
+
+        <!-- SIEMENS -->
+        <PrivateTag name='Private_0019_10xxType'                      group='0019' element='1008' vr='CS' fullName='Private_0019_10xxType'/>
+        <PrivateTag name='Private_0019_10xxVersion'                   group='0019' element='1009' vr='LO' fullName='Private_0019_10xxVersion'/>
+        <PrivateTag name='LocationsInAcquisition'                     group='0019' element='100A' vr='US' fullName='LocationsInAcquisition / NumberOfImagesInMosaic'/>
+        <PrivateTag name='SliceMeasurementDuration'                   group='0019' element='100B' vr='DS' fullName='SliceMeasurementDuration'/>
+        <PrivateTag name='B_value'                                    group='0019' element='100C' vr='IS' fullName='B_value'/>
+        <PrivateTag name='DiffusionDirectionality'                    group='0019' element='100D' vr='CS' fullName='DiffusionDirectionality'/>
+        <PrivateTag name='DiffusionGradientDirection'                 group='0019' element='100E' vr='FD' fullName='DiffusionGradientDirection'/>
+        <PrivateTag name='GradientMode'                               group='0019' element='100F' vr='SH' fullName='GradientMode'/>
+        <PrivateTag name='FlowCompensation'                           group='0019' element='1011' vr='SH' fullName='FlowCompensation'/>
+        <PrivateTag name='TablePositionOrigin'                        group='0019' element='1012' vr='SL' fullName='TablePositionOrigin'/>
+        <PrivateTag name='ImaAbsTablePosition'                        group='0019' element='1013' vr='SL' fullName='ImaAbsTablePosition'/>
+        <PrivateTag name='ImaRelTablePosition'                        group='0019' element='1014' vr='IS' fullName='ImaRelTablePosition'/>
+        <PrivateTag name='SlicePosition_PCS'                          group='0019' element='1015' vr='FD' fullName='SlicePosition_PCS'/>
+        <PrivateTag name='TimeAfterStart'                             group='0019' element='1016' vr='DS' fullName='TimeAfterStart'/>
+        <PrivateTag name='SliceResolution'                            group='0019' element='1017' vr='DS' fullName='SliceResolution'/>
+        <PrivateTag name='RealDwellTime'                              group='0019' element='1018' vr='IS' fullName='RealDwellTime'/>
+        <PrivateTag name='RBMoCoTrans'                                group='0019' element='1025' vr='DS' fullName='RBMoCoTrans'/>
+        <PrivateTag name='RBMoCoRot'                                  group='0019' element='1026' vr='DS' fullName='RBMoCoRot'/>
+        <PrivateTag name='B_matrix'                                   group='0019' element='1027' vr='FD' fullName='B_matrix'/>
+        <PrivateTag name='BandwidthPerPixelPhaseEncode'               group='0019' element='1028' vr='FD' fullName='BandwidthPerPixelPhaseEncode'/>
+        <PrivateTag name='MosaicRefAcqTimes'                          group='0019' element='1029' vr='FD' fullName='MosaicRefAcqTimes'/>
+        <PrivateTag name='CSAImageHeaderType'                         group='0029' element='1008' vr='CS' fullName='CSAImageHeaderType'/>
+        <PrivateTag name='CSAImageHeaderVersion'                      group='0029' element='1009' vr='LO' fullName='CSAImageHeaderVersion'/>
+        <PrivateTag name='CSAImageHeaderInfo'                         group='0029' element='1010' vr='OB' fullName='CSAImageHeaderInfo'/>
+        <PrivateTag name='CSASeriesHeaderType'                        group='0029' element='1018' vr='CS' fullName='CSASeriesHeaderType'/>
+        <PrivateTag name='CSASeriesHeaderVersion'                     group='0029' element='1019' vr='LO' fullName='CSASeriesHeaderVersion'/>
+        <PrivateTag name='CSASeriesHeaderInfo'                        group='0029' element='1020' vr='OB' fullName='CSASeriesHeaderInfo'/>
+        <PrivateTag name='CSAImageHeaderInfo'                         group='0029' element='1110' vr='OB' fullName='CSAImageHeaderInfo'/>
+        <PrivateTag name='CSASeriesHeaderInfo'                        group='0029' element='1120' vr='OB' fullName='CSASeriesHeaderInfo'/>
+        <PrivateTag name='PMTFInformation1'                           group='0029' element='1131' vr='LO' fullName='PMTFInformation1'/>
+        <PrivateTag name='PMTFInformation2'                           group='0029' element='1132' vr='UL' fullName='PMTFInformation2'/>
+        <PrivateTag name='PMTFInformation3'                           group='0029' element='1133' vr='UL' fullName='PMTFInformation3'/>
+        <PrivateTag name='PMTFInformation4'                           group='0029' element='1134' vr='CS' fullName='PMTFInformation4'/>
+        <PrivateTag name='SeriesWorkflowStatus'                       group='0029' element='1160' vr='LO' fullName='SeriesWorkflowStatus'/>
+        <PrivateTag name='SeriesWorkflowStatus'                       group='0029' element='1260' vr='LO' fullName='SeriesWorkflowStatus'/>
+        <PrivateTag name='Private_0051_10xx_Type'                     group='0051' element='1008' vr='CS' fullName='Private_0051_10xx_Type'/>
+        <PrivateTag name='Private_0051_10xx_Version'                  group='0051' element='1009' vr='LO' fullName='Private_0051_10xx_Version'/>
+        <PrivateTag name='TimeOfAcquisition'                          group='0051' element='100A' vr='LO' fullName='TimeOfAcquisition'/>
+        <PrivateTag name='AcquisitionMatrixText'                      group='0051' element='100B' vr='LO' fullName='AcquisitionMatrixText'/>
+        <PrivateTag name='FieldOfView'                                group='0051' element='100C' vr='LO' fullName='FieldOfView'/>
+        <PrivateTag name='SlicePositionText'                          group='0051' element='100D' vr='SH' fullName='SlicePositionText'/>
+        <PrivateTag name='ImageOrientation'                           group='0051' element='100E' vr='LO' fullName='ImageOrientation'/>
+        <PrivateTag name='CoilString'                                 group='0051' element='100F' vr='LO' fullName='CoilString'/>
+        <PrivateTag name='ImaPATModeText'                             group='0051' element='1011' vr='LO' fullName='ImaPATModeText'/>
+        <PrivateTag name='TablePositionText'                          group='0051' element='1012' vr='SH' fullName='TablePositionText'/>
+        <PrivateTag name='PositivePCSDirections'                      group='0051' element='1013' vr='SH' fullName='PositivePCSDirections'/>
+        <PrivateTag name='DataFilterText'                             group='0051' element='1015' vr='SH' fullName='DataFilterText / not sure'/>
+        <PrivateTag name='ImageTypeText'                              group='0051' element='1016' vr='LO' fullName='ImageTypeText'/>
+        <PrivateTag name='SliceThicknessText'                         group='0051' element='1017' vr='SH' fullName='SliceThicknessText'/>
+        <PrivateTag name='ScanOptionsText'                            group='0051' element='1019' vr='LO' fullName='ScanOptionsText'/>
+
+        <PrivateTag name='!-- GE -->
+        <PrivateTag name='FullFidelity'                               group='0009' element='1001' vr='LO' fullName='FullFidelity'/>
+        <PrivateTag name='SuiteId'                                    group='0009' element='1002' vr='SH' fullName='SuiteId'/>
+        <PrivateTag name='ProductId'                                  group='0009' element='1004' vr='SH' fullName='ProductId'/>
+        <PrivateTag name='ImageActualDate'                            group='0009' element='1027' vr='SL' fullName='ImageActualDate'/>
+        <PrivateTag name='ServiceId'                                  group='0009' element='1030' vr='SH' fullName='ServiceId'/>
+        <PrivateTag name='MobileLocationNumber'                       group='0009' element='1031' vr='SH' fullName='MobileLocationNumber'/>
+        <PrivateTag name='EquipmentUID'                               group='0009' element='10E3' vr='UI' fullName='EquipmentUID'/>
+        <PrivateTag name='ExamRecordChecksum'                         group='0009' element='10E7' vr='UL' fullName='ExamRecordChecksum'/>
+        <PrivateTag name='ActualSeriesDataTimeStamp'                  group='0009' element='10E9' vr='SL' fullName='ActualSeriesDataTimeStamp'/>
+        <PrivateTag name='HorizFrameOfRef'                            group='0019' element='100F' vr='DS' fullName='HorizFrameOfRef'/>
+        <PrivateTag name='SeriesContrast'                             group='0019' element='1011' vr='SS' fullName='SeriesContrast'/>
+        <PrivateTag name='LastPseq'                                   group='0019' element='1012' vr='SS' fullName='LastPseq'/>
+        <PrivateTag name='SeriesPlane'                                group='0019' element='1017' vr='SS' fullName='SeriesPlane'/>
+        <PrivateTag name='FirstScanRas'                               group='0019' element='1018' vr='LO' fullName='FirstScanRas'/>
+        <PrivateTag name='FirstScanLocation'                          group='0019' element='1019' vr='DS' fullName='FirstScanLocation'/>
+        <PrivateTag name='LastScanRas'                                group='0019' element='101A' vr='LO' fullName='LastScanRas'/>
+        <PrivateTag name='LastScanLoc'                                group='0019' element='101B' vr='DS' fullName='LastScanLoc'/>
+        <PrivateTag name='DisplayFieldOfView'                         group='0019' element='101E' vr='DS' fullName='DisplayFieldOfView'/>
+        <PrivateTag name='AcquisitionDuration'                        group='0019' element='105A' vr='FL' fullName='AcquisitionDuration'/>
+        <PrivateTag name='SecondEcho'                                 group='0019' element='107D' vr='DS' fullName='SecondEcho'/>
+        <PrivateTag name='NumberOfEchoes'                             group='0019' element='107E' vr='SS' fullName='NumberOfEchoes'/>
+        <PrivateTag name='TableDelta'                                 group='0019' element='107F' vr='DS' fullName='TableDelta'/>
+        <PrivateTag name='Contiguous'                                 group='0019' element='1081' vr='SS' fullName='Contiguous'/>
+        <PrivateTag name='PeakSAR'                                    group='0019' element='1084' vr='DS' fullName='PeakSAR'/>
+        <PrivateTag name='MonitorSAR'                                 group='0019' element='1085' vr='DS' fullName='MonitorSAR'/>
+        <PrivateTag name='CardiacRepetitionTime'                      group='0019' element='1087' vr='DS' fullName='CardiacRepetitionTime'/>
+        <PrivateTag name='ImagesPerCardiacCycle'                      group='0019' element='1088' vr='SS' fullName='ImagesPerCardiacCycle'/>
+        <PrivateTag name='ActualReceiveGainAnalog'                    group='0019' element='108A' vr='SS' fullName='ActualReceiveGainAnalog'/>
+        <PrivateTag name='ActualReceiveGainDigital'                   group='0019' element='108B' vr='SS' fullName='ActualReceiveGainDigital'/>
+        <PrivateTag name='DelayAfterTrigger'                          group='0019' element='108D' vr='DS' fullName='DelayAfterTrigger'/>
+        <PrivateTag name='Swappf'                                     group='0019' element='108F' vr='SS' fullName='Swappf'/>
+        <PrivateTag name='PauseInterval'                              group='0019' element='1090' vr='SS' fullName='PauseInterval'/>
+        <PrivateTag name='PauseTime'                                  group='0019' element='1091' vr='DS' fullName='PauseTime'/>
+        <PrivateTag name='SliceOffsetOnFreqAxis'                      group='0019' element='1092' vr='SL' fullName='SliceOffsetOnFreqAxis'/>
+        <PrivateTag name='AutoPrescanCenterFrequency'                 group='0019' element='1093' vr='DS' fullName='AutoPrescanCenterFrequency'/>
+        <PrivateTag name='AutoPrescanTransmitGain'                    group='0019' element='1094' vr='SS' fullName='AutoPrescanTransmitGain'/>
+        <PrivateTag name='AutoPrescanAnalogReceiverGain'              group='0019' element='1095' vr='SS' fullName='AutoPrescanAnalogReceiverGain'/>
+        <PrivateTag name='AutoPrescanDigitalReceiverGain'             group='0019' element='1096' vr='SS' fullName='AutoPrescanDigitalReceiverGain'/>
+        <PrivateTag name='BitmapdefiningCVs'                          group='0019' element='1097' vr='SL' fullName='BitmapdefiningCVs'/>
+        <PrivateTag name='CenterFreqMethod'                           group='0019' element='1098' vr='SS' fullName='CenterFreqMethod'/>
+        <PrivateTag name='PulseSequenceMode'                          group='0019' element='109B' vr='SS' fullName='PulseSequenceMode'/>
+        <PrivateTag name='PulseSequenceName'                          group='0019' element='109C' vr='LO' fullName='PulseSequenceName'/>
+        <PrivateTag name='PulseSequenceDate'                          group='0019' element='109D' vr='DT' fullName='PulseSequenceDate'/>
+        <PrivateTag name='SequenceName'                               group='0019' element='109E' vr='LO' fullName='SequenceName / InternalPulseSequenceName'/>
+        <PrivateTag name='TransmittingCoilType'                       group='0019' element='109F' vr='SS' fullName='TransmittingCoilType'/>
+        <PrivateTag name='SurfaceCoilType'                            group='0019' element='10A0' vr='SS' fullName='SurfaceCoilType'/>
+        <PrivateTag name='ExtremityCoilflag'                          group='0019' element='10A1' vr='SS' fullName='ExtremityCoilflag'/>
+        <PrivateTag name='RawDataRunNumber'                           group='0019' element='10A2' vr='SL' fullName='RawDataRunNumber'/>
+        <PrivateTag name='CalibratedFieldStrength'                    group='0019' element='10A3' vr='UL' fullName='CalibratedFieldStrength'/>
+        <PrivateTag name='SATFatWaterBone'                            group='0019' element='10A4' vr='SS' fullName='SATFatWaterBone'/>
+        <PrivateTag name='UserData0'                                  group='0019' element='10A7' vr='DS' fullName='UserData0'/>
+        <PrivateTag name='UserData1'                                  group='0019' element='10A8' vr='DS' fullName='UserData1'/>
+        <PrivateTag name='UserData2'                                  group='0019' element='10A9' vr='DS' fullName='UserData2'/>
+        <PrivateTag name='UserData3'                                  group='0019' element='10AA' vr='DS' fullName='UserData3'/>
+        <PrivateTag name='UserData4'                                  group='0019' element='10AB' vr='DS' fullName='UserData4'/>
+        <PrivateTag name='UserData5'                                  group='0019' element='10AC' vr='DS' fullName='UserData5'/>
+        <PrivateTag name='UserData6'                                  group='0019' element='10AD' vr='DS' fullName='UserData6'/>
+        <PrivateTag name='UserData7'                                  group='0019' element='10AE' vr='DS' fullName='UserData7'/>
+        <PrivateTag name='UserData8'                                  group='0019' element='10AF' vr='DS' fullName='UserData8'/>
+        <PrivateTag name='UserData9'                                  group='0019' element='10B0' vr='DS' fullName='UserData9'/>
+        <PrivateTag name='UserData10'                                 group='0019' element='10B1' vr='DS' fullName='UserData10'/>
+        <PrivateTag name='UserData11'                                 group='0019' element='10B2' vr='DS' fullName='UserData11'/>
+        <PrivateTag name='UserData12'                                 group='0019' element='10B3' vr='DS' fullName='UserData12'/>
+        <PrivateTag name='UserData13'                                 group='0019' element='10B4' vr='DS' fullName='UserData13'/>
+        <PrivateTag name='UserData14'                                 group='0019' element='10B5' vr='DS' fullName='UserData14'/>
+        <PrivateTag name='UserData15'                                 group='0019' element='10B6' vr='DS' fullName='UserData15'/>
+        <PrivateTag name='UserData16'                                 group='0019' element='10B7' vr='DS' fullName='UserData16'/>
+        <PrivateTag name='UserData17'                                 group='0019' element='10B8' vr='DS' fullName='UserData17'/>
+        <PrivateTag name='UserData18'                                 group='0019' element='10B9' vr='DS' fullName='UserData18'/>
+        <PrivateTag name='UserData19'                                 group='0019' element='10BA' vr='DS' fullName='UserData19'/>
+        <PrivateTag name='DiffusionDirectionX'                        group='0019' element='10BB' vr='DS' fullName='DiffusionDirectionX /UserData20'/>
+        <PrivateTag name='DiffusionDirectionY'                        group='0019' element='10BC' vr='DS' fullName='DiffusionDirectionY /UserData21'/>
+        <PrivateTag name='DiffusionDirectionZ'                        group='0019' element='10BD' vr='DS' fullName='DiffusionDirectionZ /UserData22'/>
+        <PrivateTag name='ProjectionAngle'                            group='0019' element='10BE' vr='DS' fullName='ProjectionAngle'/>
+        <PrivateTag name='SaturationPlanes'                           group='0019' element='10C0' vr='SS' fullName='SaturationPlanes'/>
+        <PrivateTag name='SATlocationR'                               group='0019' element='10C2' vr='SS' fullName='SATlocationR'/>
+        <PrivateTag name='SATlocationL'                               group='0019' element='10C3' vr='SS' fullName='SATlocationL'/>
+        <PrivateTag name='SATlocationA'                               group='0019' element='10C4' vr='SS' fullName='SATlocationA'/>
+        <PrivateTag name='SATlocationP'                               group='0019' element='10C5' vr='SS' fullName='SATlocationP'/>
+        <PrivateTag name='SATlocationH'                               group='0019' element='10C6' vr='SS' fullName='SATlocationH'/>
+        <PrivateTag name='SATlocationF'                               group='0019' element='10C7' vr='SS' fullName='SATlocationF'/>
+        <PrivateTag name='SATThicknessRL'                             group='0019' element='10C8' vr='SS' fullName='SATThicknessRL'/>
+        <PrivateTag name='SATThicknessAP'                             group='0019' element='10C9' vr='SS' fullName='SATThicknessAP'/>
+        <PrivateTag name='SATThicknessHF'                             group='0019' element='10CA' vr='SS' fullName='SATThicknessHF'/>
+        <PrivateTag name='PhaseContrastFlowAxis'                      group='0019' element='10CB' vr='SS' fullName='PhaseContrastFlowAxis'/>
+        <PrivateTag name='VelocityEncoding'                           group='0019' element='10CC' vr='SS' fullName='VelocityEncoding'/>
+        <PrivateTag name='ThicknessDisclaimer'                        group='0019' element='10CD' vr='SS' fullName='ThicknessDisclaimer'/>
+        <PrivateTag name='PrescanType'                                group='0019' element='10CE' vr='SS' fullName='PrescanType'/>
+        <PrivateTag name='PrescanStatus'                              group='0019' element='10CF' vr='SS' fullName='PrescanStatus'/>
+        <PrivateTag name='ProjectionAlgorithm'                        group='0019' element='10D2' vr='SS' fullName='ProjectionAlgorithm'/>
+        <PrivateTag name='FractionalEcho'                             group='0019' element='10D5' vr='SS' fullName='FractionalEcho'/>
+        <PrivateTag name='CardiacPhaseNumber'                         group='0019' element='10D7' vr='SS' fullName='CardiacPhaseNumber'/>
+        <PrivateTag name='VariableEchoflag'                           group='0019' element='10D8' vr='SS' fullName='VariableEchoflag'/>
+        <PrivateTag name='ConcatenatedSAT'                            group='0019' element='10D9' vr='DS' fullName='ConcatenatedSAT'/>
+        <PrivateTag name='UserData23'                                 group='0019' element='10DF' vr='DS' fullName='UserData23'/>
+        <PrivateTag name='NumberOfDiffusionDirection'                 group='0019' element='10E0' vr='DS' fullName='NumberOfDiffusionDirection /UserData24'/>
+        <PrivateTag name='VelocityEncodeScale'                        group='0019' element='10E2' vr='DS' fullName='VelocityEncodeScale'/>
+        <PrivateTag name='FastPhases'                                 group='0019' element='10F2' vr='SS' fullName='FastPhases'/>
+        <PrivateTag name='TransmitGain'                               group='0019' element='10F9' vr='DS' fullName='TransmitGain'/>
+        <PrivateTag name='!--
+        <PrivateTag name='ImagePositionPatient'                       group='0020' element='9301' vr='DS' fullName='ImagePositionPatient / These 4 are not private'/>
+        <PrivateTag name='ImageOrientationPatient'                    group='0020' element='9302' vr='DS' fullName='ImageOrientationPatient (but seems used only by GE)'/>
+        <PrivateTag name='PlanePositionSequence'                      group='0020' element='930E' vr='SQ' fullName='PlanePositionSequence'/>
+        <PrivateTag name='PlaneOrientationSequence'                   group='0020' element='930F' vr='SQ' fullName='PlaneOrientationSequence'/>
+        -->
+        <PrivateTag name='SeriesFromWhichPrescribed'                  group='0021' element='1003' vr='SS' fullName='SeriesFromWhichPrescribed'/>
+        <PrivateTag name='SeriesFromWhichPrescribed'                  group='0021' element='1035' vr='SS' fullName='SeriesFromWhichPrescribed'/>
+        <PrivateTag name='ImageFromWhichPrescribed'                   group='0021' element='1036' vr='SS' fullName='ImageFromWhichPrescribed'/>
+        <PrivateTag name='ScreenFormat'                               group='0021' element='1037' vr='SS' fullName='ScreenFormat'/>
+        <PrivateTag name='LocationsInAcquisition'                     group='0021' element='104F' vr='SS' fullName='LocationsInAcquisition'/>
+        <PrivateTag name='GraphicallyPrescribed'                      group='0021' element='1050' vr='SS' fullName='GraphicallyPrescribed'/>
+        <PrivateTag name='RotationFromSourceXRot'                     group='0021' element='1051' vr='DS' fullName='RotationFromSourceXRot'/>
+        <PrivateTag name='RotationFromSourceYRot'                     group='0021' element='1052' vr='DS' fullName='RotationFromSourceYRot'/>
+        <PrivateTag name='RotationFromSourceZRot'                     group='0021' element='1053' vr='DS' fullName='RotationFromSourceZRot'/>
+        <PrivateTag name='Num3DSlabs'                                 group='0021' element='1056' vr='SL' fullName='Num3DSlabs'/>
+        <PrivateTag name='LocsPer3DSlab'                              group='0021' element='1057' vr='SL' fullName='LocsPer3DSlab'/>
+        <PrivateTag name='Overlaps'                                   group='0021' element='1058' vr='SL' fullName='Overlaps'/>
+        <PrivateTag name='ImageFiltering'                             group='0021' element='1059' vr='SL' fullName='ImageFiltering'/>
+        <PrivateTag name='DiffusionDirection'                         group='0021' element='105A' vr='SL' fullName='DiffusionDirection'/>
+        <PrivateTag name='TaggingFlipAngle'                           group='0021' element='105B' vr='DS' fullName='TaggingFlipAngle'/>
+        <PrivateTag name='TaggingOrientation'                         group='0021' element='105C' vr='DS' fullName='TaggingOrientation'/>
+        <PrivateTag name='TagSpacing'                                 group='0021' element='105D' vr='DS' fullName='TagSpacing'/>
+        <PrivateTag name='RTIA_timer'                                 group='0021' element='105E' vr='DS' fullName='RTIA_timer'/>
+        <PrivateTag name='Fps'                                        group='0021' element='105F' vr='DS' fullName='Fps'/>
+        <PrivateTag name='AutoWindowLevelAlpha'                       group='0021' element='1081' vr='DS' fullName='AutoWindowLevelAlpha'/>
+        <PrivateTag name='AutoWindowLevelBeta'                        group='0021' element='1082' vr='DS' fullName='AutoWindowLevelBeta'/>
+        <PrivateTag name='AutoWindowLevelWindow'                      group='0021' element='1083' vr='DS' fullName='AutoWindowLevelWindow'/>
+        <PrivateTag name='AutoWindowLevelLevel'                       group='0021' element='1084' vr='DS' fullName='AutoWindowLevelLevel'/>
+        <PrivateTag name='StartTimeInFirstAxial'                      group='0023' element='1070' vr='FD' fullName='StartTimeInFirstAxial'/>
+        <PrivateTag name='NumberOfUpdatesToHeader'                    group='0023' element='1074' vr='SL' fullName='NumberOfUpdatesToHeader'/>
+        <PrivateTag name='IndicatesStudyHasCompleteInfo'              group='0023' element='107D' vr='SS' fullName='IndicatesStudyHasCompleteInfo'/>
+        <PrivateTag name='LastPulseSequenceUsed'                      group='0025' element='1006' vr='SS' fullName='LastPulseSequenceUsed'/>
+        <PrivateTag name='ImagesInSeries'                             group='0025' element='1007' vr='SL' fullName='ImagesInSeries'/>
+        <PrivateTag name='LandmarkCounter'                            group='0025' element='1010' vr='SL' fullName='LandmarkCounter'/>
+        <PrivateTag name='NumberOfAcquisitions'                       group='0025' element='1011' vr='SS' fullName='NumberOfAcquisitions'/>
+        <PrivateTag name='IndicatesNumberOfUpdatesToHeader'           group='0025' element='1014' vr='SL' fullName='IndicatesNumberOfUpdatesToHeader'/>
+        <PrivateTag name='SeriesCompleteFlag'                         group='0025' element='1017' vr='SL' fullName='SeriesCompleteFlag'/>
+        <PrivateTag name='NumberOfImagesArchived'                     group='0025' element='1018' vr='SL' fullName='NumberOfImagesArchived'/>
+        <PrivateTag name='LastImageNumberUsed'                        group='0025' element='1019' vr='SL' fullName='LastImageNumberUsed'/>
+        <PrivateTag name='PrimaryReceiverSuiteAndHost'                group='0025' element='101A' vr='SH' fullName='PrimaryReceiverSuiteAndHost'/>
+        <PrivateTag name='ProtocolDataBlock'                          group='0025' element='101B' vr='OB' fullName='ProtocolDataBlock'/>
+        <PrivateTag name='ImageArchiveFlag'                           group='0027' element='1006' vr='SL' fullName='ImageArchiveFlag'/>
+        <PrivateTag name='ScoutType'                                  group='0027' element='1010' vr='SS' fullName='ScoutType'/>
+        <PrivateTag name='ImagingMode'                                group='0027' element='1031' vr='SS' fullName='ImagingMode'/>
+        <PrivateTag name='PulseSequence'                              group='0027' element='1032' vr='SS' fullName='PulseSequence'/>
+        <PrivateTag name='ImagingOptions'                             group='0027' element='1033' vr='UL' fullName='ImagingOptions'/>
+        <PrivateTag name='PlaneType'                                  group='0027' element='1035' vr='SS' fullName='PlaneType'/>
+        <PrivateTag name='RASletterOfImageLocation'                   group='0027' element='1040' vr='SH' fullName='RASletterOfImageLocation'/>
+        <PrivateTag name='ImageLocation'                              group='0027' element='1041' vr='FL' fullName='ImageLocation'/>
+        <PrivateTag name='CenterRCoordOfPlaneImage'                   group='0027' element='1042' vr='FL' fullName='CenterRCoordOfPlaneImage'/>
+        <PrivateTag name='CenterACoordOfPlaneImage'                   group='0027' element='1043' vr='FL' fullName='CenterACoordOfPlaneImage'/>
+        <PrivateTag name='CenterSCoordOfPlaneImage'                   group='0027' element='1044' vr='FL' fullName='CenterSCoordOfPlaneImage'/>
+        <PrivateTag name='NormalRCoord'                               group='0027' element='1045' vr='FL' fullName='NormalRCoord'/>
+        <PrivateTag name='NormalACoord'                               group='0027' element='1046' vr='FL' fullName='NormalACoord'/>
+        <PrivateTag name='NormalSCoord'                               group='0027' element='1047' vr='FL' fullName='NormalSCoord'/>
+        <PrivateTag name='ImageDimensionX'                            group='0027' element='1060' vr='FL' fullName='ImageDimensionX'/>
+        <PrivateTag name='ImageDimensionY'                            group='0027' element='1061' vr='FL' fullName='ImageDimensionY'/>
+        <PrivateTag name='NumberOfExcitations'                        group='0027' element='1062' vr='FL' fullName='NumberOfExcitations'/>
+        <PrivateTag name='LowerRangeOfPixels1'                        group='0029' element='1015' vr='SL' fullName='LowerRangeOfPixels1'/>
+        <PrivateTag name='UpperRangeOfPixels1'                        group='0029' element='1016' vr='SL' fullName='UpperRangeOfPixels1'/>
+        <PrivateTag name='LowerRangeOfPixels2'                        group='0029' element='1017' vr='SL' fullName='LowerRangeOfPixels2'/>
+        <PrivateTag name='UpperRangeOfPixels2'                        group='0029' element='1018' vr='SL' fullName='UpperRangeOfPixels2'/>
+        <PrivateTag name='VersionOfTheHdrStruct'                      group='0029' element='1026' vr='SS' fullName='VersionOfTheHdrStruct'/>
+        <PrivateTag name='AdvantageCompOverflow'                      group='0029' element='1034' vr='SL' fullName='AdvantageCompOverflow'/>
+        <PrivateTag name='AdvantageCompUnderflow'                     group='0029' element='1035' vr='SL' fullName='AdvantageCompUnderflow'/>
+        <PrivateTag name='BitmapOfPrescanOptions'                     group='0043' element='1001' vr='SS' fullName='BitmapOfPrescanOptions'/>
+        <PrivateTag name='GradientOffsetInX'                          group='0043' element='1002' vr='SS' fullName='GradientOffsetInX'/>
+        <PrivateTag name='GradientOffsetInY'                          group='0043' element='1003' vr='SS' fullName='GradientOffsetInY'/>
+        <PrivateTag name='GradientOffsetInZ'                          group='0043' element='1004' vr='SS' fullName='GradientOffsetInZ'/>
+        <PrivateTag name='NumberOfEPIShots'                           group='0043' element='1006' vr='SS' fullName='NumberOfEPIShots'/>
+        <PrivateTag name='ViewsPerSegment'                            group='0043' element='1007' vr='SS' fullName='ViewsPerSegment'/>
+        <PrivateTag name='RespiratoryRate'                            group='0043' element='1008' vr='SS' fullName='RespiratoryRate'/>
+        <PrivateTag name='RespiratoryTriggerPoint'                    group='0043' element='1009' vr='SS' fullName='RespiratoryTriggerPoint'/>
+        <PrivateTag name='TypeOfReceiverUsed'                         group='0043' element='100A' vr='SS' fullName='TypeOfReceiverUsed'/>
+        <PrivateTag name='DB_dtPeakRateOfChangeOfGradientField'       group='0043' element='100B' vr='DS' fullName='DB_dtPeakRateOfChangeOfGradientField'/>
+        <PrivateTag name='dB_dtLimitsInUnitsOfPercent'                group='0043' element='100C' vr='DS' fullName='dB_dtLimitsInUnitsOfPercent'/>
+        <PrivateTag name='PSDEstimatedLimit'                          group='0043' element='100D' vr='DS' fullName='PSDEstimatedLimit'/>
+        <PrivateTag name='PSDEstimatedLimitInTeslaPerSecond'          group='0043' element='100E' vr='DS' fullName='PSDEstimatedLimitInTeslaPerSecond'/>
+        <PrivateTag name='WindowValue'                                group='0043' element='1010' vr='SS' fullName='WindowValue'/>
+        <PrivateTag name='GEImageIntegrity'                           group='0043' element='101C' vr='SS' fullName='GEImageIntegrity'/>
+        <PrivateTag name='LevelValue'                                 group='0043' element='101D' vr='SS' fullName='LevelValue'/>
+        <PrivateTag name='Saravghead'                                 group='0043' element='100F' vr='DS' fullName='Saravghead'/>
+        <PrivateTag name='UniqueImageIden'                            group='0043' element='1028' vr='OB' fullName='UniqueImageIden'/>
+        <PrivateTag name='HistogramTables'                            group='0043' element='1029' vr='OB' fullName='HistogramTables'/>
+        <PrivateTag name='UserDefineData'                             group='0043' element='102A' vr='OB' fullName='UserDefineData'/>
+        <PrivateTag name='PrivateScanOptions'                         group='0043' element='102B' vr='SS' fullName='PrivateScanOptions'/>
+        <PrivateTag name='EffectiveEchoSpacing'                       group='0043' element='102C' vr='SS' fullName='EffectiveEchoSpacing'/>
+        <PrivateTag name='FilterMode'                                 group='0043' element='102D' vr='SH' fullName='FilterMode'/>
+        <PrivateTag name='PrivateImageType'                           group='0043' element='102F' vr='SS' fullName='PrivateImageType'/>
+        <PrivateTag name='VasCollapseFlag'                            group='0043' element='1030' vr='SS' fullName='VasCollapseFlag'/>
+        <PrivateTag name='VasFlags'                                   group='0043' element='1032' vr='SS' fullName='VasFlags'/>
+        <PrivateTag name='Neg_scanspacing'                            group='0043' element='1033' vr='FL' fullName='Neg_scanspacing'/>
+        <PrivateTag name='OffsetFrequency'                            group='0043' element='1034' vr='IS' fullName='OffsetFrequency'/>
+        <PrivateTag name='User_usage_tag'                             group='0043' element='1035' vr='UL' fullName='User_usage_tag'/>
+        <PrivateTag name='User_fill_map_MSW'                          group='0043' element='1036' vr='UL' fullName='User_fill_map_MSW'/>
+        <PrivateTag name='User_fill_map_LSW'                          group='0043' element='1037' vr='UL' fullName='User_fill_map_LSW'/>
+        <PrivateTag name='UserData_25_48'                             group='0043' element='1038' vr='FL' fullName='UserData_25_48'/>
+        <PrivateTag name='SlopInt_6_9'                                group='0043' element='1039' vr='IS' fullName='SlopInt_6_9'/>
+        <PrivateTag name='SlopInt_10_17'                              group='0043' element='1060' vr='IS' fullName='SlopInt_10_17'/>
+        <PrivateTag name='ScannerStudyEntityUID'                      group='0043' element='1061' vr='UI' fullName='ScannerStudyEntityUID'/>
+        <PrivateTag name='ScannerStudyID'                             group='0043' element='1062' vr='SH' fullName='ScannerStudyID'/>
+        <PrivateTag name='ScannerTableEntry'                          group='0043' element='106F' vr='DS' fullName='ScannerTableEntry'/>
+        <PrivateTag name='ParadigmName'                               group='0043' element='1070' vr='LO' fullName='ParadigmName'/>
+        <PrivateTag name='ParadigmDescription'                        group='0043' element='1071' vr='ST' fullName='ParadigmDescription'/>
+        <PrivateTag name='ParadigmUID'                                group='0043' element='1072' vr='UI' fullName='ParadigmUID'/>
+        <PrivateTag name='ExperimentType'                             group='0043' element='1073' vr='US' fullName='ExperimentType'/>
+        <PrivateTag name='NumberOfRestVolumes'                        group='0043' element='1074' vr='US' fullName='NumberOfRestVolumes'/>
+        <PrivateTag name='NumberOfActiveVolumes'                      group='0043' element='1075' vr='US' fullName='NumberOfActiveVolumes'/>
+        <PrivateTag name='NumberOfDummyScans'                         group='0043' element='1076' vr='US' fullName='NumberOfDummyScans'/>
+        <PrivateTag name='LocationsInAcquisition'                     group='0043' element='1079' vr='US' fullName='LocationsInAcquisition / SlicesPerVolume'/>
+        <PrivateTag name='ExpectedTimePoints'                         group='0043' element='107A' vr='US' fullName='ExpectedTimePoints'/>
+        <PrivateTag name='RegressorValues'                            group='0043' element='107B' vr='FL' fullName='RegressorValues'/>
+        <PrivateTag name='DelayAfterSliceGroup'                       group='0043' element='107C' vr='FL' fullName='DelayAfterSliceGroup'/>
+        <PrivateTag name='ReconModeFlagWord'                          group='0043' element='107D' vr='US' fullName='ReconModeFlagWord'/>
+        <PrivateTag name='CoilIDData'                                 group='0043' element='1080' vr='LO' fullName='CoilIDData'/>
+        <PrivateTag name='GECoilName'                                 group='0043' element='1081' vr='LO' fullName='GECoilName'/>
+        <PrivateTag name='SystemConfigurationInformation'             group='0043' element='1082' vr='LO' fullName='SystemConfigurationInformation'/>
+        <PrivateTag name='AssetRFactors'                              group='0043' element='1083' vr='DS' fullName='AssetRFactors'/>
+        <PrivateTag name='AdditionalAssetData'                        group='0043' element='1084' vr='LO' fullName='AdditionalAssetData'/>
+        <PrivateTag name='PUREAcquisitionCalibrationSeriesUID'        group='0043' element='1088' vr='UI' fullName='PUREAcquisitionCalibrationSeriesUID'/>
+        <PrivateTag name='GoverningBodydB_dtAndSARDefinition'         group='0043' element='1089' vr='LO' fullName='GoverningBodydB_dtAndSARDefinition'/>
+        <PrivateTag name='InPlanePhaseEncodingDirection'              group='0043' element='108A' vr='CS' fullName='InPlanePhaseEncodingDirection'/>
+        <PrivateTag name='FMRIBinaryDataBlock'                        group='0043' element='108B' vr='OB' fullName='FMRIBinaryDataBlock'/>
+        <PrivateTag name='SARDefinition'                              group='0043' element='1090' vr='LO' fullName='SARDefinition'/>
+        <PrivateTag name='SARValue'                                   group='0043' element='1091' vr='DS' fullName='SARValue'/>
+        <PrivateTag name='PrescanReuseString'                         group='0043' element='1095' vr='LO' fullName='PrescanReuseString'/>
+        <PrivateTag name='ContentQualification'                       group='0043' element='1096' vr='CS' fullName='ContentQualification'/>
+        <PrivateTag name='ImageFilteringParameters'                   group='0043' element='1097' vr='LO' fullName='ImageFilteringParameters'/>
+        <PrivateTag name='ASSETAcquisitionCalibrationSeriesUID'       group='0043' element='1098' vr='UI' fullName='ASSETAcquisitionCalibrationSeriesUID'/>
+        <PrivateTag name='RxStackIdentification'                      group='0043' element='109A' vr='IS' fullName='RxStackIdentification'/>
+        <PrivateTag name='AdditionalFilteringParameters'              group='0043' element='10AA' vr='LO' fullName='AdditionalFilteringParameters'/>
+        <PrivateTag name='AdvancedEddyCorrection'                     group='0043' element='10B3' vr='DS' fullName='AdvancedEddyCorrection'/>
+
+        <PrivateTag name='!-- Philips -->
+        <PrivateTag name='ChemicalShift'                              group='2001' element='1001' vr='FL' fullName='ChemicalShift'/>
+        <PrivateTag name='ChemicalShiftNumberMR'                      group='2001' element='1002' vr='IS' fullName='ChemicalShiftNumberMR'/>
+        <PrivateTag name='B_factor'                                   group='2001' element='1003' vr='FL' fullName='B_factor'/>
+        <PrivateTag name='DiffusionDirection'                         group='2001' element='1004' vr='CS' fullName='DiffusionDirection'/>
+        <PrivateTag name='ImageEnhanced'                              group='2001' element='1006' vr='CS' fullName='ImageEnhanced'/>
+        <PrivateTag name='ImageTypeEDES'                              group='2001' element='1007' vr='CS' fullName='ImageTypeEDES'/>
+        <PrivateTag name='PhaseNumber'                                group='2001' element='1008' vr='IS' fullName='PhaseNumber'/>
+        <PrivateTag name='ImagePrepulseDelay'                         group='2001' element='1009' vr='FL' fullName='ImagePrepulseDelay'/>
+        <PrivateTag name='SliceNumberMR'                              group='2001' element='100A' vr='IS' fullName='SliceNumberMR'/>
+        <PrivateTag name='SliceOrientation'                           group='2001' element='100B' vr='CS' fullName='SliceOrientation'/>
+        <PrivateTag name='ArrhythmiaRejection'                        group='2001' element='100C' vr='CS' fullName='ArrhythmiaRejection'/>
+        <PrivateTag name='CardiacCycled'                              group='2001' element='100E' vr='CS' fullName='CardiacCycled'/>
+        <PrivateTag name='CardiacGateWidth'                           group='2001' element='100F' vr='SS' fullName='CardiacGateWidth'/>
+        <PrivateTag name='CardiacSync'                                group='2001' element='1010' vr='CS' fullName='CardiacSync'/>
+        <PrivateTag name='DiffusionEchoTime'                          group='2001' element='1011' vr='FL' fullName='DiffusionEchoTime'/>
+        <PrivateTag name='DynamicSeries'                              group='2001' element='1012' vr='CS' fullName='DynamicSeries'/>
+        <PrivateTag name='EPIFactor'                                  group='2001' element='1013' vr='SL' fullName='EPIFactor'/>
+        <PrivateTag name='NumberOfEchoes'                             group='2001' element='1014' vr='SL' fullName='NumberOfEchoes'/>
+        <PrivateTag name='NumberOfLocations'                          group='2001' element='1015' vr='SS' fullName='NumberOfLocations'/>
+        <PrivateTag name='NumberOfPCDirections'                       group='2001' element='1016' vr='SS' fullName='NumberOfPCDirections'/>
+        <PrivateTag name='NumberOfPhasesMR'                           group='2001' element='1017' vr='SL' fullName='NumberOfPhasesMR'/>
+        <PrivateTag name='LocationsInAcquisition'                     group='2001' element='1018' vr='SL' fullName='LocationsInAcquisition / NumberOfSlicesMR'/>
+        <PrivateTag name='PartialMatrixScanned'                       group='2001' element='1019' vr='CS' fullName='PartialMatrixScanned'/>
+        <PrivateTag name='PCVelocity'                                 group='2001' element='101A' vr='FL' fullName='PCVelocity'/>
+        <PrivateTag name='PrepulseDelay'                              group='2001' element='101B' vr='FL' fullName='PrepulseDelay'/>
+        <PrivateTag name='PrepulseType'                               group='2001' element='101C' vr='CS' fullName='PrepulseType'/>
+        <PrivateTag name='ReconstructionNumberMR'                     group='2001' element='101D' vr='IS' fullName='ReconstructionNumberMR'/>
+        <PrivateTag name='RespirationSync'                            group='2001' element='101F' vr='CS' fullName='RespirationSync'/>
+        <PrivateTag name='ScanningSequence'                           group='2001' element='1020' vr='LO' fullName='ScanningSequence / ScanningTechnique'/>
+        <PrivateTag name='SPIR'                                       group='2001' element='1021' vr='CS' fullName='SPIR'/>
+        <PrivateTag name='WaterFatShift'                              group='2001' element='1022' vr='FL' fullName='WaterFatShift'/>
+        <PrivateTag name='MRSeriesFlipAngle'                          group='2001' element='1023' vr='DS' fullName='MRSeriesFlipAngle (duplicate)'/>
+        <PrivateTag name='SeriesIsInteractive'                        group='2001' element='1024' vr='CS' fullName='SeriesIsInteractive'/>
+        <PrivateTag name='EchoTimeDisplay'                            group='2001' element='1025' vr='SH' fullName='EchoTimeDisplay'/>
+        <PrivateTag name='StackNumberOfSlices'                        group='2001' element='102D' vr='SS' fullName='StackNumberOfSlices'/>
+        <PrivateTag name='StackRadialAngle'                           group='2001' element='1032' vr='FL' fullName='StackRadialAngle'/>
+        <PrivateTag name='StackRadialAxis'                            group='2001' element='1033' vr='CS' fullName='StackRadialAxis'/>
+        <PrivateTag name='StackSliceNumber'                           group='2001' element='1035' vr='SS' fullName='StackSliceNumber'/>
+        <PrivateTag name='StackType'                                  group='2001' element='1036' vr='CS' fullName='StackType'/>
+        <PrivateTag name='Stack'                                      group='2001' element='105F' vr='SQ' fullName='Stack'/>
+        <PrivateTag name='NumberOfStacks'                             group='2001' element='1060' vr='SL' fullName='NumberOfStacks'/>
+        <PrivateTag name='SeriesTransmitted'                          group='2001' element='1061' vr='CS' fullName='SeriesTransmitted'/>
+        <PrivateTag name='SeriesCommitted'                            group='2001' element='1062' vr='CS' fullName='SeriesCommitted'/>
+        <PrivateTag name='ExaminationSource'                          group='2001' element='1063' vr='CS' fullName='ExaminationSource'/>
+        <PrivateTag name='SeriesType'                                 group='2001' element='106E' vr='SH' fullName='SeriesType'/>
+        <PrivateTag name='MRSeriesAcquisitionNumber'                  group='2001' element='107B' vr='IS' fullName='MRSeriesAcquisitionNumber'/>
+        <PrivateTag name='NumberOfDynamicScans'                       group='2001' element='1081' vr='IS' fullName='NumberOfDynamicScans'/>
+        <PrivateTag name='MRSeriesEchoTrainLength'                    group='2001' element='1082' vr='IS' fullName='MRSeriesEchoTrainLength (duplicate)'/>
+        <PrivateTag name='MRSeriesImagingFrequency'                   group='2001' element='1083' vr='DS' fullName='MRSeriesImagingFrequency (duplicate)'/>
+        <PrivateTag name='MRSeriesInversionTime'                      group='2001' element='1084' vr='DS' fullName='MRSeriesInversionTime (duplicate)'/>
+        <PrivateTag name='MRSeriesMagneticFieldStrength'              group='2001' element='1085' vr='DS' fullName='MRSeriesMagneticFieldStrength (duplicate, seems wrong)'/>
+        <PrivateTag name='MRSeriesNrOfPhaseEncodingSteps'             group='2001' element='1086' vr='IS' fullName='MRSeriesNrOfPhaseEncodingSteps (duplicate, seems wrong)'/>
+        <PrivateTag name='MRSeriesNucleus'                            group='2001' element='1087' vr='SH' fullName='MRSeriesNucleus (duplicate)'/>
+        <PrivateTag name='MRSeriesNumberOfAverages'                   group='2001' element='1088' vr='DS' fullName='MRSeriesNumberOfAverages (duplicate)'/>
+        <PrivateTag name='MRSeriesPercentPhaseFieldOfView'            group='2001' element='1089' vr='DS' fullName='MRSeriesPercentPhaseFieldOfView (duplicate, wrong)'/>
+        <PrivateTag name='MRSeriesPercentSampling'                    group='2001' element='108A' vr='DS' fullName='MRSeriesPercentSampling (duplicate, wrong)'/>
+        <PrivateTag name='MRSeriesTransmittingCoil'                   group='2001' element='108B' vr='SH' fullName='MRSeriesTransmittingCoil (duplicate)'/>
+        <PrivateTag name='ExamCardName'                               group='2001' element='10C8' vr='LO' fullName='ExamCardName'/>
+        <PrivateTag name='ProspectiveMotionCorrection'                group='2001' element='10F1' vr='FL' fullName='ProspectiveMotionCorrection'/>
+        <PrivateTag name='RetrospectiveMotionCorrection'              group='2001' element='10F2' vr='FL' fullName='RetrospectiveMotionCorrection'/>
+        <PrivateTag name='MRImageAngulationAP'                        group='2005' element='1000' vr='FL' fullName='MRImageAngulationAP'/>
+        <PrivateTag name='MRImageAngulationFH'                        group='2005' element='1001' vr='FL' fullName='MRImageAngulationFH'/>
+        <PrivateTag name='MRImageAngulationRL'                        group='2005' element='1002' vr='FL' fullName='MRImageAngulationRL'/>
+        <PrivateTag name='MRImageDisplayOrientation'                  group='2005' element='1004' vr='CS' fullName='MRImageDisplayOrientation'/>
+        <PrivateTag name='MRImageOffCentreAP'                         group='2005' element='1008' vr='FL' fullName='MRImageOffCentreAP'/>
+        <PrivateTag name='MRImageOffCentreFH'                         group='2005' element='1009' vr='FL' fullName='MRImageOffCentreFH'/>
+        <PrivateTag name='MRImageOffCentreRL'                         group='2005' element='100A' vr='FL' fullName='MRImageOffCentreRL'/>
+        <PrivateTag name='MRMaxFP'                                    group='2005' element='100B' vr='FL' fullName='MRMaxFP'/>
+        <PrivateTag name='MRMinFP'                                    group='2005' element='100C' vr='FL' fullName='MRMinFP'/>
+        <PrivateTag name='MRScaleIntercept'                           group='2005' element='100D' vr='FL' fullName='MRScaleIntercept'/>
+        <PrivateTag name='MRScaleSlope'                               group='2005' element='100E' vr='FL' fullName='MRScaleSlope'/>
+        <PrivateTag name='WindowCenterOriginal'                       group='2005' element='100F' vr='DS' fullName='WindowCenterOriginal'/>
+        <PrivateTag name='WindowWidthOriginal'                        group='2005' element='1010' vr='DS' fullName='WindowWidthOriginal'/>
+        <PrivateTag name='MRImageTypeMR'                              group='2005' element='1011' vr='CS' fullName='MRImageTypeMR'/>
+        <PrivateTag name='MRCardiacGating'                            group='2005' element='1012' vr='CS' fullName='MRCardiacGating'/>
+        <PrivateTag name='MRSeriesDevelopmentMode'                    group='2005' element='1013' vr='CS' fullName='MRSeriesDevelopmentMode'/>
+        <PrivateTag name='MRSeriesDiffusion'                          group='2005' element='1014' vr='CS' fullName='MRSeriesDiffusion'/>
+        <PrivateTag name='MRFatSaturationTechnique'                   group='2005' element='1015' vr='CS' fullName='MRFatSaturationTechnique'/>
+        <PrivateTag name='MRFlowCompensation'                         group='2005' element='1016' vr='CS' fullName='MRFlowCompensation'/>
+        <PrivateTag name='MRFourierInterpolation'                     group='2005' element='1017' vr='CS' fullName='MRFourierInterpolation'/>
+        <PrivateTag name='MRInverseReconstructed'                     group='2005' element='1019' vr='CS' fullName='MRInverseReconstructed'/>
+        <PrivateTag name='MRLabelSyntax'                              group='2005' element='101A' vr='SS' fullName='MRLabelSyntax'/>
+        <PrivateTag name='MRMagnetiPrepared'                          group='2005' element='101B' vr='CS' fullName='MRMagnetiPrepared'/>
+        <PrivateTag name='MRMagnetTransferConst'                      group='2005' element='101C' vr='CS' fullName='MRMagnetTransferConst'/>
+        <PrivateTag name='MRMeasurementScanResolution'                group='2005' element='101D' vr='SS' fullName='MRMeasurementScanResolution'/>
+        <PrivateTag name='MIPProtocol'                                group='2005' element='101E' vr='SH' fullName='MIPProtocol'/>
+        <PrivateTag name='MPRProtocol'                                group='2005' element='101F' vr='SH' fullName='MPRProtocol'/>
+        <PrivateTag name='NumberOfChemicalShift'                      group='2005' element='1020' vr='SL' fullName='NumberOfChemicalShift'/>
+        <PrivateTag name='MRNumberOfMixes'                            group='2005' element='1021' vr='SS' fullName='MRNumberOfMixes'/>
+        <PrivateTag name='MRNumberOfReferences'                       group='2005' element='1022' vr='IS' fullName='MRNumberOfReferences'/>
+        <PrivateTag name='MRNumberOfSlabs'                            group='2005' element='1023' vr='SS' fullName='MRNumberOfSlabs'/>
+        <PrivateTag name='MRNumberOfVolumes'                          group='2005' element='1025' vr='SS' fullName='MRNumberOfVolumes'/>
+        <PrivateTag name='MROverSampleingPhase'                       group='2005' element='1026' vr='CS' fullName='MROverSampleingPhase'/>
+        <PrivateTag name='MRPackageMode'                              group='2005' element='1027' vr='CS' fullName='MRPackageMode'/>
+        <PrivateTag name='MRPartialFourierFrequency'                  group='2005' element='1028' vr='CS' fullName='MRPartialFourierFrequency'/>
+        <PrivateTag name='MRPartialFourierPhase'                      group='2005' element='1029' vr='CS' fullName='MRPartialFourierPhase'/>
+        <PrivateTag name='MRPatientReferenceID'                       group='2005' element='102A' vr='IS' fullName='MRPatientReferenceID'/>
+        <PrivateTag name='MRPercentScanComplete'                      group='2005' element='102B' vr='SS' fullName='MRPercentScanComplete'/>
+        <PrivateTag name='MRPhaseEncodedRecording'                    group='2005' element='102C' vr='CS' fullName='MRPhaseEncodedRecording'/>
+        <PrivateTag name='MRPlanScanSurveyNumberOfImages'             group='2005' element='102D' vr='IS' fullName='MRPlanScanSurveyNumberOfImages'/>
+        <PrivateTag name='MRPPGPPUGating'                             group='2005' element='102E' vr='CS' fullName='MRPPGPPUGating'/>
+        <PrivateTag name='MRSpatialPresaturation'                     group='2005' element='102F' vr='CS' fullName='MRSpatialPresaturation'/>
+        <PrivateTag name='MRSeriesRepetitionTime'                     group='2005' element='1030' vr='FL' fullName='MRSeriesRepetitionTime (duplicate)'/>
+        <PrivateTag name='MRRespiratoryGating'                        group='2005' element='1031' vr='CS' fullName='MRRespiratoryGating'/>
+        <PrivateTag name='MRSeriesScanDuration'                       group='2005' element='1033' vr='FL' fullName='MRSeriesScanDuration'/>
+        <PrivateTag name='MRSegmentedKSpace'                          group='2005' element='1034' vr='CS' fullName='MRSegmentedKSpace'/>
+        <PrivateTag name='MRSeriesDataType'                           group='2005' element='1035' vr='CS' fullName='MRSeriesDataType'/>
+        <PrivateTag name='MRSeriesIsCardiac'                          group='2005' element='1036' vr='CS' fullName='MRSeriesIsCardiac'/>
+        <PrivateTag name='MRSeriesIsSpectro'                          group='2005' element='1037' vr='CS' fullName='MRSeriesIsSpectro'/>
+        <PrivateTag name='MRSpoiled'                                  group='2005' element='1038' vr='CS' fullName='MRSpoiled'/>
+        <PrivateTag name='MRSteadyState'                              group='2005' element='1039' vr='CS' fullName='MRSteadyState'/>
+        <PrivateTag name='MRSubAnatomy'                               group='2005' element='103A' vr='SH' fullName='MRSubAnatomy'/>
+        <PrivateTag name='MRTimeReversedSteadyState'                  group='2005' element='103B' vr='CS' fullName='MRTimeReversedSteadyState'/>
+        <PrivateTag name='MRSeriesTone'                               group='2005' element='103C' vr='CS' fullName='MRSeriesTone'/>
+        <PrivateTag name='MRNumberOfRRIntervalRanges'                 group='2005' element='103D' vr='SS' fullName='MRNumberOfRRIntervalRanges'/>
+        <PrivateTag name='MRRRIntervalsDistribution'                  group='2005' element='103E' vr='SL' fullName='MRRRIntervalsDistribution'/>
+        <PrivateTag name='MRPlanScanAcquisitionNo'                    group='2005' element='103F' vr='SL' fullName='MRPlanScanAcquisitionNo'/>
+        <PrivateTag name='MRChemicalShiftNo'                          group='2005' element='1040' vr='SL' fullName='MRChemicalShiftNo'/>
+        <PrivateTag name='MRPlanScanDynamicScanNo'                    group='2005' element='1041' vr='SL' fullName='MRPlanScanDynamicScanNo'/>
+        <PrivateTag name='MRPlanScanSurveyEchoNo'                     group='2005' element='1042' vr='SL' fullName='MRPlanScanSurveyEchoNo'/>
+        <PrivateTag name='MRPlanScanImageType'                        group='2005' element='1043' vr='CS' fullName='MRPlanScanImageType'/>
+        <PrivateTag name='MRPlanScanPhaseNo'                          group='2005' element='1044' vr='SL' fullName='MRPlanScanPhaseNo'/>
+        <PrivateTag name='MRPlanScanReconstructionNo'                 group='2005' element='1045' vr='SL' fullName='MRPlanScanReconstructionNo'/>
+        <PrivateTag name='MRPlanScanScanningSequence'                 group='2005' element='1046' vr='CS' fullName='MRPlanScanScanningSequence'/>
+        <PrivateTag name='MRPlanScanSliceNo'                          group='2005' element='1047' vr='SL' fullName='MRPlanScanSliceNo'/>
+        <PrivateTag name='MRVolumeAngulationAP'                       group='2005' element='1054' vr='FL' fullName='MRVolumeAngulationAP'/>
+        <PrivateTag name='MRVolumeAngulationFH'                       group='2005' element='1055' vr='FL' fullName='MRVolumeAngulationFH'/>
+        <PrivateTag name='MRVolumeAngulationRL'                       group='2005' element='1056' vr='FL' fullName='MRVolumeAngulationRL'/>
+        <PrivateTag name='MRVolumeFovAP'                              group='2005' element='1057' vr='FL' fullName='MRVolumeFovAP'/>
+        <PrivateTag name='MRVolumeFovFH'                              group='2005' element='1058' vr='FL' fullName='MRVolumeFovFH'/>
+        <PrivateTag name='MRVolumeFovRL'                              group='2005' element='1059' vr='FL' fullName='MRVolumeFovRL'/>
+        <PrivateTag name='MRVolumeOffcentreAP'                        group='2005' element='105A' vr='FL' fullName='MRVolumeOffcentreAP'/>
+        <PrivateTag name='MRVolumeOffcentreFH'                        group='2005' element='105B' vr='FL' fullName='MRVolumeOffcentreFH'/>
+        <PrivateTag name='MRVolumeOffcentreRL'                        group='2005' element='105C' vr='FL' fullName='MRVolumeOffcentreRL'/>
+        <PrivateTag name='MRVolumeType'                               group='2005' element='105D' vr='CS' fullName='MRVolumeType'/>
+        <PrivateTag name='MRVolumeViewAxis'                           group='2005' element='105E' vr='CS' fullName='MRVolumeViewAxis'/>
+        <PrivateTag name='MRStudyOrigin'                              group='2005' element='105F' vr='CS' fullName='MRStudyOrigin'/>
+        <PrivateTag name='MRStudySequenceNumber'                      group='2005' element='1060' vr='IS' fullName='MRStudySequenceNumber'/>
+        <PrivateTag name='MRImagePrepulseType'                        group='2005' element='1061' vr='CS' fullName='MRImagePrepulseType'/>
+        <PrivateTag name='MRfMRIStatusIndication'                     group='2005' element='1063' vr='SS' fullName='MRfMRIStatusIndication'/>
+        <PrivateTag name='MRImageScanningSequencePrivate'             group='2005' element='106E' vr='CS' fullName='MRImageScanningSequencePrivate'/>
+        <PrivateTag name='MRAcquisitionType'                          group='2005' element='106F' vr='CS' fullName='MRAcquisitionType / MRSeriesAcquisitionTypePrivate'/>
+        <PrivateTag name='MRStackAngulationAP'                        group='2005' element='1071' vr='FL' fullName='MRStackAngulationAP'/>
+        <PrivateTag name='MRStackAngulationFH'                        group='2005' element='1072' vr='FL' fullName='MRStackAngulationFH'/>
+        <PrivateTag name='MRStackAngulationRL'                        group='2005' element='1073' vr='FL' fullName='MRStackAngulationRL'/>
+        <PrivateTag name='MRStackFovAP'                               group='2005' element='1074' vr='FL' fullName='MRStackFovAP'/>
+        <PrivateTag name='MRStackFovFH'                               group='2005' element='1075' vr='FL' fullName='MRStackFovFH'/>
+        <PrivateTag name='MRStackFovRL'                               group='2005' element='1076' vr='FL' fullName='MRStackFovRL'/>
+        <PrivateTag name='MRStackOffcentreAP'                         group='2005' element='1078' vr='FL' fullName='MRStackOffcentreAP'/>
+        <PrivateTag name='MRStackOffcentreFH'                         group='2005' element='1079' vr='FL' fullName='MRStackOffcentreFH'/>
+        <PrivateTag name='MRStackOffcentreRL'                         group='2005' element='107A' vr='FL' fullName='MRStackOffcentreRL'/>
+        <PrivateTag name='MRStackPreparationDirection'                group='2005' element='107B' vr='CS' fullName='MRStackPreparationDirection'/>
+        <PrivateTag name='MRStackSliceDistance'                       group='2005' element='107E' vr='FL' fullName='MRStackSliceDistance'/>
+        <PrivateTag name='SeriesPlanScan'                             group='2005' element='1080' vr='SQ' fullName='SeriesPlanScan'/>
+        <PrivateTag name='MRStackViewAxis'                            group='2005' element='1081' vr='CS' fullName='MRStackViewAxis'/>
+        <PrivateTag name='SeriesSlab'                                 group='2005' element='1083' vr='SQ' fullName='SeriesSlab'/>
+        <PrivateTag name='SeriesReference'                            group='2005' element='1084' vr='SQ' fullName='SeriesReference'/>
+        <PrivateTag name='SeriesVolume'                               group='2005' element='1085' vr='SQ' fullName='SeriesVolume'/>
+        <PrivateTag name='MRNumberOfGeometry'                         group='2005' element='1086' vr='SS' fullName='MRNumberOfGeometry'/>
+        <PrivateTag name='SeriesGeom'                                 group='2005' element='109E' vr='SQ' fullName='SeriesGeom'/>
+        <PrivateTag name='MRSeriesSpectralSelectiveExcitationPulse'   group='2005' element='109F' vr='CS' fullName='MRSeriesSpectralSelectiveExcitationPulse'/>
+        <PrivateTag name='MRImageDynamicScanBeginTime'                group='2005' element='10A0' vr='FL' fullName='MRImageDynamicScanBeginTime'/>
+        <PrivateTag name='SyncraScanType'                             group='2005' element='10A1' vr='CS' fullName='SyncraScanType'/>
+        <PrivateTag name='MRIsCOCA'                                   group='2005' element='10A2' vr='CS' fullName='MRIsCOCA'/>
+        <PrivateTag name='MRStackCoilID'                              group='2005' element='10A3' vr='IS' fullName='MRStackCoilID'/>
+        <PrivateTag name='MRStackCBBCoil1'                            group='2005' element='10A4' vr='IS' fullName='MRStackCBBCoil1'/>
+        <PrivateTag name='MRStackCBBCoil2'                            group='2005' element='10A5' vr='IS' fullName='MRStackCBBCoil2'/>
+        <PrivateTag name='MRStackChannelCombi'                        group='2005' element='10A6' vr='IS' fullName='MRStackChannelCombi'/>
+        <PrivateTag name='MRStackCoilConn'                            group='2005' element='10A7' vr='CS' fullName='MRStackCoilConn'/>
+        <PrivateTag name='MRPrivateInversionTime'                     group='2005' element='10A8' vr='DS' fullName='MRPrivateInversionTime'/>
+        <PrivateTag name='MRSeriesGeometryCorrection'                 group='2005' element='10A9' vr='CS' fullName='MRSeriesGeometryCorrection'/>
+        <PrivateTag name='DiffusionDirectionX'                        group='2005' element='10B0' vr='FL' fullName='DiffusionDirectionX / degrees'/>
+        <PrivateTag name='DiffusionDirectionY'                        group='2005' element='10B1' vr='FL' fullName='DiffusionDirectionY'/>
+        <PrivateTag name='DiffusionDirectionZ'                        group='2005' element='10B2' vr='FL' fullName='DiffusionDirectionZ'/>
+        <PrivateTag name='SequenceVariant'                            group='2005' element='10C0' vr='CS' fullName='SequenceVariant / SeriesScanSequence (duplicate)'/>
+        <PrivateTag name='SeriesTransactionUID'                       group='2005' element='1134' vr='LT' fullName='SeriesTransactionUID'/>
+        <PrivateTag name='MRNumberOfRequestExcerpts'                  group='2005' element='1199' vr='UL' fullName='MRNumberOfRequestExcerpts'/>
+        <PrivateTag name='MRNumberOfSOPCommon'                        group='2005' element='1200' vr='UL' fullName='MRNumberOfSOPCommon'/>
+        <PrivateTag name='MRNoOfFilmConsumption'                      group='2005' element='1201' vr='UL' fullName='MRNoOfFilmConsumption'/>
+        <PrivateTag name='MRNumberOfCodes'                            group='2005' element='1213' vr='UL' fullName='MRNumberOfCodes'/>
+        <PrivateTag name='MRNoDateOfLastCalibration'                  group='2005' element='1243' vr='SS' fullName='MRNoDateOfLastCalibration'/>
+        <PrivateTag name='MRNoTimeOfLastCalibration'                  group='2005' element='1244' vr='SS' fullName='MRNoTimeOfLastCalibration'/>
+        <PrivateTag name='MRNrOfSoftwareVersion'                      group='2005' element='1245' vr='SS' fullName='MRNrOfSoftwareVersion'/>
+        <PrivateTag name='MRNrOfPatientOtherNames'                    group='2005' element='1247' vr='SS' fullName='MRNrOfPatientOtherNames'/>
+        <PrivateTag name='MRNrOfReqRecipeOfResults'                   group='2005' element='1248' vr='SS' fullName='MRNrOfReqRecipeOfResults'/>
+        <PrivateTag name='MRNrOfSeriesOperatorsName'                  group='2005' element='1249' vr='SS' fullName='MRNrOfSeriesOperatorsName'/>
+        <PrivateTag name='MRNrOfSeriesPerfPhysiName'                  group='2005' element='1250' vr='SS' fullName='MRNrOfSeriesPerfPhysiName'/>
+        <PrivateTag name='MRNrOfStudyAdmittingDiagnosticDescr'        group='2005' element='1251' vr='SS' fullName='MRNrOfStudyAdmittingDiagnosticDescr'/>
+        <PrivateTag name='MRNrOfStudyPatientContrastAllergies'        group='2005' element='1252' vr='SS' fullName='MRNrOfStudyPatientContrastAllergies'/>
+        <PrivateTag name='MRNrOfStudyPatientMedicalAlerts'            group='2005' element='1253' vr='SS' fullName='MRNrOfStudyPatientMedicalAlerts'/>
+        <PrivateTag name='MRNrOfStudyPhysiciansOfRecord'              group='2005' element='1254' vr='SS' fullName='MRNrOfStudyPhysiciansOfRecord'/>
+        <PrivateTag name='MRNrOfStudyPhysiReadingStudy'               group='2005' element='1255' vr='SS' fullName='MRNrOfStudyPhysiReadingStudy'/>
+        <PrivateTag name='MRSpectroSIB0Correction'                    group='2005' element='1325' vr='CS' fullName='MRSpectroSIB0Correction'/>
+        <PrivateTag name='MRSpectroB0EchoTopPosition'                 group='2005' element='1326' vr='FL' fullName='MRSpectroB0EchoTopPosition'/>
+        <PrivateTag name='MRSpectroComplexComponent'                  group='2005' element='1327' vr='CS' fullName='MRSpectroComplexComponent'/>
+        <PrivateTag name='MRSpectroDataOrigin'                        group='2005' element='1328' vr='CS' fullName='MRSpectroDataOrigin'/>
+        <PrivateTag name='MRSpectroEchoTopPosition'                   group='2005' element='1329' vr='FL' fullName='MRSpectroEchoTopPosition'/>
+        <PrivateTag name='MRInPlaneTransforms'                        group='2005' element='1330' vr='CS' fullName='MRInPlaneTransforms'/>
+        <PrivateTag name='MRNumberOfSpectraAcquired'                  group='2005' element='1331' vr='SS' fullName='MRNumberOfSpectraAcquired'/>
+        <PrivateTag name='MRPhaseEncodingEchoTopPositions'            group='2005' element='1333' vr='FL' fullName='MRPhaseEncodingEchoTopPositions'/>
+        <PrivateTag name='MRPhysicalQuantityForChemicalShift'         group='2005' element='1334' vr='CS' fullName='MRPhysicalQuantityForChemicalShift'/>
+        <PrivateTag name='MRPhysicalQuantitySpatial'                  group='2005' element='1335' vr='CS' fullName='MRPhysicalQuantitySpatial'/>
+        <PrivateTag name='MRReferenceFrequency'                       group='2005' element='1336' vr='FL' fullName='MRReferenceFrequency'/>
+        <PrivateTag name='MRSampleOffset'                             group='2005' element='1337' vr='FL' fullName='MRSampleOffset'/>
+        <PrivateTag name='MRSamplePitch'                              group='2005' element='1338' vr='FL' fullName='MRSamplePitch'/>
+        <PrivateTag name='MRSearchIntervalForPeaks'                   group='2005' element='1339' vr='SS' fullName='MRSearchIntervalForPeaks'/>
+        <PrivateTag name='MRSignalDomainForChemicalShift'             group='2005' element='1340' vr='CS' fullName='MRSignalDomainForChemicalShift'/>
+        <PrivateTag name='MRSignalDomainSpatial'                      group='2005' element='1341' vr='CS' fullName='MRSignalDomainSpatial'/>
+        <PrivateTag name='MRSignalType'                               group='2005' element='1342' vr='CS' fullName='MRSignalType'/>
+        <PrivateTag name='MRSpectroAdditionalRotations'               group='2005' element='1343' vr='CS' fullName='MRSpectroAdditionalRotations'/>
+        <PrivateTag name='MRSpectroDisplayRanges'                     group='2005' element='1344' vr='SS' fullName='MRSpectroDisplayRanges'/>
+        <PrivateTag name='MRSpectroEchoAcquisition'                   group='2005' element='1345' vr='CS' fullName='MRSpectroEchoAcquisition'/>
+        <PrivateTag name='MRSpectroFrequencyUnit'                     group='2005' element='1346' vr='CS' fullName='MRSpectroFrequencyUnit'/>
+        <PrivateTag name='MRSpectroGamma'                             group='2005' element='1347' vr='FL' fullName='MRSpectroGamma'/>
+        <PrivateTag name='MRSpectroHiddenLineRemoval'                 group='2005' element='1348' vr='CS' fullName='MRSpectroHiddenLineRemoval'/>
+        <PrivateTag name='MRSpectroHorizontalShift'                   group='2005' element='1349' vr='FL' fullName='MRSpectroHorizontalShift'/>
+        <PrivateTag name='MRSpectroHorizontalWindow'                  group='2005' element='1350' vr='FL' fullName='MRSpectroHorizontalWindow'/>
+        <PrivateTag name='MRSpectroNumberOfDisplayRanges'             group='2005' element='1351' vr='SS' fullName='MRSpectroNumberOfDisplayRanges'/>
+        <PrivateTag name='MRSpectroNumberOfEchoPulses'                group='2005' element='1352' vr='SS' fullName='MRSpectroNumberOfEchoPulses'/>
+        <PrivateTag name='MRSpectroProcessingHistory'                 group='2005' element='1353' vr='LO' fullName='MRSpectroProcessingHistory'/>
+        <PrivateTag name='MRSpectroScanType'                          group='2005' element='1354' vr='CS' fullName='MRSpectroScanType'/>
+        <PrivateTag name='MRSpectroSICSIntervals'                     group='2005' element='1355' vr='FL' fullName='MRSpectroSICSIntervals'/>
+        <PrivateTag name='MRSpectroSIMode'                            group='2005' element='1356' vr='CS' fullName='MRSpectroSIMode'/>
+        <PrivateTag name='MRSpectroSpectralBW'                        group='2005' element='1357' vr='SS' fullName='MRSpectroSpectralBW'/>
+        <PrivateTag name='MRSpectroTitleLine'                         group='2005' element='1358' vr='LO' fullName='MRSpectroTitleLine'/>
+        <PrivateTag name='MRSpectroTurboEchoSpacing'                  group='2005' element='1359' vr='FL' fullName='MRSpectroTurboEchoSpacing'/>
+        <PrivateTag name='MRSpectroVerticalShift'                     group='2005' element='1360' vr='FL' fullName='MRSpectroVerticalShift'/>
+        <PrivateTag name='MRSpectroVerticalWindow'                    group='2005' element='1361' vr='FL' fullName='MRSpectroVerticalWindow'/>
+        <PrivateTag name='MRSpectroOffset'                            group='2005' element='1362' vr='FL' fullName='MRSpectroOffset'/>
+        <PrivateTag name='MRSpectrumPitch'                            group='2005' element='1363' vr='FL' fullName='MRSpectrumPitch'/>
+        <PrivateTag name='MRVolumeSelection'                          group='2005' element='1364' vr='CS' fullName='MRVolumeSelection'/>
+        <PrivateTag name='MRNoMixesSpectro'                           group='2005' element='1370' vr='SS' fullName='MRNoMixesSpectro'/>
+        <PrivateTag name='MRSeriesSPMix'                              group='2005' element='1371' vr='SQ' fullName='MRSeriesSPMix'/>
+        <PrivateTag name='MRScanoGramSurveyNumberOfImages'            group='2005' element='1381' vr='IS' fullName='MRScanoGramSurveyNumberOfImages'/>
+        <PrivateTag name='MRNumberOfProcedureCodes'                   group='2005' element='1382' vr='UL' fullName='MRNumberOfProcedureCodes'/>
+        <PrivateTag name='MRStackCoilFunction'                        group='2005' element='1390' vr='CS' fullName='MRStackCoilFunction'/>
+        <PrivateTag name='MRGeolinkID'                                group='2005' element='1392' vr='IS' fullName='MRGeolinkID'/>
+        <PrivateTag name='MRStationNo'                                group='2005' element='1393' vr='IS' fullName='MRStationNo'/>
+        <PrivateTag name='MRFlowImagesPresent'                        group='2005' element='1396' vr='CS' fullName='MRFlowImagesPresent'/>
+        <PrivateTag name='AnatomicRegCodeValue'                       group='2005' element='1397' vr='LO' fullName='AnatomicRegCodeValue'/>
+        <PrivateTag name='MRMobiviewEnabled'                          group='2005' element='1398' vr='CS' fullName='MRMobiviewEnabled'/>
+        <PrivateTag name='MRIViewBoldEnabled'                         group='2005' element='1399' vr='CS' fullName='MRIViewBoldEnabled'/>
+        <PrivateTag name='MRVolumeViewEnabled'                        group='2005' element='1400' vr='CS' fullName='MRVolumeViewEnabled'/>
+        <PrivateTag name='MRNumberOfStudyReference'                   group='2005' element='1401' vr='UL' fullName='MRNumberOfStudyReference'/>
+        <PrivateTag name='SPSCode'                                    group='2005' element='1402' vr='SQ' fullName='SPSCode'/>
+        <PrivateTag name='MRNumberOfSPSCodes'                         group='2005' element='1403' vr='UL' fullName='MRNumberOfSPSCodes'/>
+        <PrivateTag name='MRNrOfSpecificCharacterSet'                 group='2005' element='1407' vr='SS' fullName='MRNrOfSpecificCharacterSet'/>
+        <PrivateTag name='RescaleInterceptOriginal'                   group='2005' element='1409' vr='DS' fullName='RescaleInterceptOriginal'/>
+        <PrivateTag name='RescaleSlopeOriginal'                       group='2005' element='140A' vr='DS' fullName='RescaleSlopeOriginal'/>
+        <PrivateTag name='RescaleTypeOriginal'                        group='2005' element='140B' vr='LO' fullName='RescaleTypeOriginal'/>
+        <PrivateTag name='PrivateSharedSq'                            group='2005' element='140E' vr='SQ' fullName='PrivateSharedSq'/>
+        <PrivateTag name='PrivatePerFrameSq'                          group='2005' element='140F' vr='SQ' fullName='PrivatePerFrameSq'/>
+        <PrivateTag name='MFPrivateReferencedSOPInstanceUID'          group='2005' element='1411' vr='UI' fullName='MFPrivateReferencedSOPInstanceUID'/>
+        <PrivateTag name='MRImageDiffBValueNumber'                    group='2005' element='1412' vr='IS' fullName='MRImageDiffBValueNumber'/>
+        <PrivateTag name='MRImageGradientOrientationNumber'           group='2005' element='1413' vr='IS' fullName='MRImageGradientOrientationNumber'/>
+        <PrivateTag name='MRSeriesNrOfDiffBValues'                    group='2005' element='1414' vr='SL' fullName='MRSeriesNrOfDiffBValues'/>
+        <PrivateTag name='MRSeriesNrOfDiffGradOrients'                group='2005' element='1415' vr='SL' fullName='MRSeriesNrOfDiffGradOrients'/>
+        <PrivateTag name='MRSeriesPlanMode'                           group='2005' element='1416' vr='CS' fullName='MRSeriesPlanMode'/>
+        <PrivateTag name='B_matrix'                                   group='2005' element='1417' vr='FD' fullName='B_matrix / DiffusionBMatrix'/>
+        <PrivateTag name='PrivOperatingModeType'                      group='2005' element='1418' vr='CS' fullName='PrivOperatingModeType'/>
+        <PrivateTag name='PrivOperatingMode'                          group='2005' element='1419' vr='CS' fullName='PrivOperatingMode'/>
+        <PrivateTag name='MRFatSaturationTechnique'                   group='2005' element='141A' vr='CS' fullName='MRFatSaturationTechnique'/>
+        <PrivateTag name='MRVersionNumberDeletedImages'               group='2005' element='141B' vr='IS' fullName='MRVersionNumberDeletedImages'/>
+        <PrivateTag name='MRVersionNumberDeletedSpectra'              group='2005' element='141C' vr='IS' fullName='MRVersionNumberDeletedSpectra'/>
+        <PrivateTag name='MRVersionNumberDeletedBlobsets'             group='2005' element='141D' vr='IS' fullName='MRVersionNumberDeletedBlobsets'/>
+        <PrivateTag name='ViewingHardcopyOnly'                        group='2005' element='1426' vr='CS' fullName='ViewingHardcopyOnly'/>
+        <PrivateTag name='MRSeriesNrOfLabelTypes'                     group='2005' element='1428' vr='SL' fullName='MRSeriesNrOfLabelTypes'/>
+        <PrivateTag name='ExamPrintStatus'                            group='2005' element='142A' vr='CS' fullName='ExamPrintStatus'/>
+        <PrivateTag name='ExamExportStatus'                           group='2005' element='142B' vr='CS' fullName='ExamExportStatus'/>
+        <PrivateTag name='ExamStorageCommitStatus'                    group='2005' element='142C' vr='CS' fullName='ExamStorageCommitStatus'/>
+        <PrivateTag name='ExamMediaWriteStatus'                       group='2005' element='142D' vr='CS' fullName='ExamMediaWriteStatus'/>
+        <PrivateTag name='MRSeriesSafetyOverrideMode'                 group='2005' element='1432' vr='CS' fullName='MRSeriesSafetyOverrideMode'/>
+        <PrivateTag name='SpectroExamcard'                            group='2005' element='1435' vr='CS' fullName='SpectroExamcard'/>
+        <PrivateTag name='DataDictionaryContentsVersion'              group='2005' element='143A' vr='LT' fullName='DataDictionaryContentsVersion'/>
+        <PrivateTag name='MRIsCoilSurvey'                             group='2005' element='143B' vr='CS' fullName='MRIsCoilSurvey'/>
+        <PrivateTag name='MRStackTablePosLong'                        group='2005' element='143C' vr='FL' fullName='MRStackTablePosLong'/>
+        <PrivateTag name='MRStackTablePosLat'                         group='2005' element='143D' vr='FL' fullName='MRStackTablePosLat'/>
+        <PrivateTag name='MRStackPosteriorCoilPos'                    group='2005' element='143E' vr='FL' fullName='MRStackPosteriorCoilPos'/>
+        <PrivateTag name='AIMDLimitsApplied'                          group='2005' element='143F' vr='CS' fullName='AIMDLimitsApplied'/>
+        <PrivateTag name='AIMDHeadSARLimit'                           group='2005' element='1440' vr='FL' fullName='AIMDHeadSARLimit'/>
+        <PrivateTag name='AIMDWholeBodySARLimit'                      group='2005' element='1441' vr='FL' fullName='AIMDWholeBodySARLimit'/>
+        <PrivateTag name='AIMDB1RMSLimit'                             group='2005' element='1442' vr='FL' fullName='AIMDB1RMSLimit'/>
+        <PrivateTag name='AIMDdbDtLimit'                              group='2005' element='1443' vr='FL' fullName='AIMDdbDtLimit'/>
+        <PrivateTag name='TFEFactor'                                  group='2005' element='1444' vr='IS' fullName='TFEFactor'/>
+        <PrivateTag name='AttenuationCorrection'                      group='2005' element='1445' vr='CS' fullName='AttenuationCorrection'/>
+        <PrivateTag name='PowerOptimization'                          group='2005' element='1447' vr='FL' fullName='PowerOptimization'/>
+        <PrivateTag name='DataWindowDuration'                         group='2005' element='144A' vr='FL' fullName='DataWindowDuration'/>
+        <PrivateTag name='MixingTime'                                 group='2005' element='144B' vr='FL' fullName='MixingTime'/>
+        <PrivateTag name='FirstEchoTime'                              group='2005' element='144C' vr='FL' fullName='FirstEchoTime'/>
+        <PrivateTag name='IsB0Series'                                 group='2005' element='144D' vr='CS' fullName='IsB0Series'/>
+        <PrivateTag name='IsB1Series'                                 group='2005' element='144E' vr='CS' fullName='IsB1Series'/>
+        <PrivateTag name='VolumeSelect'                               group='2005' element='144F' vr='CS' fullName='VolumeSelect'/>
+        <PrivateTag name='MRNrOfPatientOtherIDs'                      group='2005' element='1450' vr='SS' fullName='MRNrOfPatientOtherIDs'/>
+        <PrivateTag name='ImageVelocityEncodingDirection'             group='2005' element='1455' vr='FD' fullName='ImageVelocityEncodingDirection'/>
+        <PrivateTag name='PresentationLUTShape'                       group='2050' element='0020' vr='CS' fullName='PresentationLUTShape'/>
+    </PrivateTagList>
+</PrivateTagConfig>
