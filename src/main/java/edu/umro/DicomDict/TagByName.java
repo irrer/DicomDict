@@ -32,8 +32,7 @@ import com.pixelmed.dicom.DicomDictionary;
  * </p>
  * <p>
  * <p>
- * When the Pixelmed library
- * changed to a subset of tags defined by <code>TagFromName</code>, several tags were
+ * When the Pixelmed library changed to a subset of tags defined by <code>TagFromName</code>, several tags were
  * suddenly gone.  While they can be looked up at run time, this loses the safety of having
  * the names checked at compile time.  This utility fixes that.
  * </p>
