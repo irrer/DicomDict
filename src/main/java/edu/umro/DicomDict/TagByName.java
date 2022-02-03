@@ -43,6 +43,7 @@ public class TagByName {
 
     public static final AttributeTag AbortFlag = dict.getTagFromName("AbortFlag");
     public static final AttributeTag AccessionNumber = dict.getTagFromName("AccessionNumber");
+    public static final AttributeTag AccessoryCode = dict.getTagFromName("AccessoryCode");
     public static final AttributeTag AcquisitionDate = dict.getTagFromName("AcquisitionDate");
     public static final AttributeTag AcquisitionDateTime = dict.getTagFromName("AcquisitionDateTime");
     public static final AttributeTag AcquisitionMatrix = dict.getTagFromName("AcquisitionMatrix");
@@ -51,9 +52,16 @@ public class TagByName {
     public static final AttributeTag AcquisitionType = dict.getTagFromName("AcquisitionType");
     public static final AttributeTag AngioFlag = dict.getTagFromName("AngioFlag");
     public static final AttributeTag AngularPosition = dict.getTagFromName("AngularPosition");
+    public static final AttributeTag ApplicatorApertureShape = dict.getTagFromName("ApplicatorApertureShape");
+    public static final AttributeTag ApplicatorGeometrySequence = dict.getTagFromName("ApplicatorGeometrySequence");
+    public static final AttributeTag ApplicatorID = dict.getTagFromName("ApplicatorID");
+    public static final AttributeTag ApplicatorOpening = dict.getTagFromName("ApplicatorOpening");
+    public static final AttributeTag ApplicatorSequence = dict.getTagFromName("ApplicatorSequence");
+    public static final AttributeTag ApplicatorType = dict.getTagFromName("ApplicatorType");
     public static final AttributeTag ApprovalStatus = dict.getTagFromName("ApprovalStatus");
     public static final AttributeTag AxisLabels = dict.getTagFromName("AxisLabels");
     public static final AttributeTag AxisUnits = dict.getTagFromName("AxisUnits");
+    public static final AttributeTag BeamDeliveryDurationLimit = dict.getTagFromName("BeamDeliveryDurationLimit");
     public static final AttributeTag BeamDescription = dict.getTagFromName("BeamDescription");
     public static final AttributeTag BeamDose = dict.getTagFromName("BeamDose");
     public static final AttributeTag BeamLimitingDeviceAngle = dict.getTagFromName("BeamLimitingDeviceAngle");
@@ -71,6 +79,16 @@ public class TagByName {
     public static final AttributeTag BeamType = dict.getTagFromName("BeamType");
     public static final AttributeTag BitsAllocated = dict.getTagFromName("BitsAllocated");
     public static final AttributeTag BitsStored = dict.getTagFromName("BitsStored");
+    public static final AttributeTag BlockData = dict.getTagFromName("BlockData");
+    public static final AttributeTag BlockDivergence = dict.getTagFromName("BlockDivergence");
+    public static final AttributeTag BlockMountingPosition = dict.getTagFromName("BlockMountingPosition");
+    public static final AttributeTag BlockName = dict.getTagFromName("BlockName");
+    public static final AttributeTag BlockNumber = dict.getTagFromName("BlockNumber");
+    public static final AttributeTag BlockNumberOfPoints = dict.getTagFromName("BlockNumberOfPoints");
+    public static final AttributeTag BlockSequence = dict.getTagFromName("BlockSequence");
+    public static final AttributeTag BlockThickness = dict.getTagFromName("BlockThickness");
+    public static final AttributeTag BlockTrayID = dict.getTagFromName("BlockTrayID");
+    public static final AttributeTag BlockType = dict.getTagFromName("BlockType");
     public static final AttributeTag BodyPartExamined = dict.getTagFromName("BodyPartExamined");
     public static final AttributeTag BrachyTreatmentType = dict.getTagFromName("BrachyTreatmentType");
     public static final AttributeTag CalciumScoringMassFactorDevice = dict.getTagFromName("CalciumScoringMassFactorDevice");
@@ -208,6 +226,7 @@ public class TagByName {
     public static final AttributeTag Manufacturer = dict.getTagFromName("Manufacturer");
     public static final AttributeTag ManufacturerModelName = dict.getTagFromName("ManufacturerModelName");
     public static final AttributeTag MappingResource = dict.getTagFromName("MappingResource");
+    public static final AttributeTag MaterialID = dict.getTagFromName("MaterialID");
     public static final AttributeTag MatrixRegistrationSequence = dict.getTagFromName("MatrixRegistrationSequence");
     public static final AttributeTag MatrixSequence = dict.getTagFromName("MatrixSequence");
     public static final AttributeTag MeasuredValueSequence = dict.getTagFromName("MeasuredValueSequence");
@@ -301,6 +320,7 @@ public class TagByName {
     public static final AttributeTag ReferencedControlPointIndex = dict.getTagFromName("ReferencedControlPointIndex");
     public static final AttributeTag ReferencedDoseReferenceNumber = dict.getTagFromName("ReferencedDoseReferenceNumber");
     public static final AttributeTag ReferencedDoseReferenceSequence = dict.getTagFromName("ReferencedDoseReferenceSequence");
+    public static final AttributeTag ReferencedDoseReferenceUID = dict.getTagFromName("ReferencedDoseReferenceUID");
     public static final AttributeTag ReferencedFractionGroupNumber = dict.getTagFromName("ReferencedFractionGroupNumber");
     public static final AttributeTag ReferencedFractionGroupSequence = dict.getTagFromName("ReferencedFractionGroupSequence");
     public static final AttributeTag ReferencedFrameNumber = dict.getTagFromName("ReferencedFrameNumber");
@@ -392,6 +412,7 @@ public class TagByName {
     public static final AttributeTag SourceAxisDistance = dict.getTagFromName("SourceAxisDistance");
     public static final AttributeTag SourceImageSequence = dict.getTagFromName("SourceImageSequence");
     public static final AttributeTag SourceToBeamLimitingDeviceDistance = dict.getTagFromName("SourceToBeamLimitingDeviceDistance");
+    public static final AttributeTag SourceToBlockTrayDistance = dict.getTagFromName("SourceToBlockTrayDistance");
     public static final AttributeTag SourceToSurfaceDistance = dict.getTagFromName("SourceToSurfaceDistance");
     public static final AttributeTag SpacingBetweenSlices = dict.getTagFromName("SpacingBetweenSlices");
     public static final AttributeTag SpecificCharacterSet = dict.getTagFromName("SpecificCharacterSet");
@@ -438,6 +459,7 @@ public class TagByName {
     public static final AttributeTag ToleranceTableLabel = dict.getTagFromName("ToleranceTableLabel");
     public static final AttributeTag ToleranceTableNumber = dict.getTagFromName("ToleranceTableNumber");
     public static final AttributeTag ToleranceTableSequence = dict.getTagFromName("ToleranceTableSequence");
+    public static final AttributeTag TotalBlockTrayFactor = dict.getTagFromName("TotalBlockTrayFactor");
     public static final AttributeTag TotalCollimationWidth = dict.getTagFromName("TotalCollimationWidth");
     public static final AttributeTag TransferSyntaxUID = dict.getTagFromName("TransferSyntaxUID");
     public static final AttributeTag TransmitCoilName = dict.getTagFromName("TransmitCoilName");
@@ -471,6 +493,4 @@ public class TagByName {
     public static final AttributeTag XRayImageReceptorAngle = dict.getTagFromName("XRayImageReceptorAngle");
     public static final AttributeTag XRayImageReceptorTranslation = dict.getTagFromName("XRayImageReceptorTranslation");
     public static final AttributeTag XRayTubeCurrent = dict.getTagFromName("XRayTubeCurrent");
-
-
 }
