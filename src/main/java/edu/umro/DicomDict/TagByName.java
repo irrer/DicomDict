@@ -98,6 +98,9 @@ public class TagByName {
     public static final AttributeTag CodeMeaning = dict.getTagFromName("CodeMeaning");
     public static final AttributeTag CodeValue = dict.getTagFromName("CodeValue");
     public static final AttributeTag CodingSchemeDesignator = dict.getTagFromName("CodingSchemeDesignator");
+    public static final AttributeTag CodingSchemeIdentificationSequence = dict.getTagFromName("CodingSchemeIdentificationSequence");
+    public static final AttributeTag CodingSchemeName = dict.getTagFromName("CodingSchemeName");
+    public static final AttributeTag CodingSchemeResponsibleOrganization = dict.getTagFromName("CodingSchemeResponsibleOrganization");
     public static final AttributeTag CodingSchemeUID = dict.getTagFromName("CodingSchemeUID");
     public static final AttributeTag CodingSchemeVersion = dict.getTagFromName("CodingSchemeVersion");
     public static final AttributeTag Columns = dict.getTagFromName("Columns");
@@ -112,6 +115,10 @@ public class TagByName {
     public static final AttributeTag ContentSequence = dict.getTagFromName("ContentSequence");
     public static final AttributeTag ContentTemplateSequence = dict.getTagFromName("ContentTemplateSequence");
     public static final AttributeTag ContentTime = dict.getTagFromName("ContentTime");
+    public static final AttributeTag ContextGroupIdentificationSequence = dict.getTagFromName("ContextGroupIdentificationSequence");
+    public static final AttributeTag ContextGroupVersion = dict.getTagFromName("ContextGroupVersion");
+    public static final AttributeTag ContextIdentifier = dict.getTagFromName("ContextIdentifier");
+    public static final AttributeTag ContextUID = dict.getTagFromName("ContextUID");
     public static final AttributeTag ContinuityOfContent = dict.getTagFromName("ContinuityOfContent");
     public static final AttributeTag ContourData = dict.getTagFromName("ContourData");
     public static final AttributeTag ContourGeometricType = dict.getTagFromName("ContourGeometricType");
@@ -226,6 +233,9 @@ public class TagByName {
     public static final AttributeTag Manufacturer = dict.getTagFromName("Manufacturer");
     public static final AttributeTag ManufacturerModelName = dict.getTagFromName("ManufacturerModelName");
     public static final AttributeTag MappingResource = dict.getTagFromName("MappingResource");
+    public static final AttributeTag MappingResourceIdentificationSequence = dict.getTagFromName("MappingResourceIdentificationSequence");
+    public static final AttributeTag MappingResourceName = dict.getTagFromName("MappingResourceName");
+    public static final AttributeTag MappingResourceUID = dict.getTagFromName("MappingResourceUID");
     public static final AttributeTag MaterialID = dict.getTagFromName("MaterialID");
     public static final AttributeTag MatrixRegistrationSequence = dict.getTagFromName("MatrixRegistrationSequence");
     public static final AttributeTag MatrixSequence = dict.getTagFromName("MatrixSequence");
@@ -449,6 +459,7 @@ public class TagByName {
     public static final AttributeTag TableTopRollRotationDirection = dict.getTagFromName("TableTopRollRotationDirection");
     public static final AttributeTag TableTopVerticalPosition = dict.getTagFromName("TableTopVerticalPosition");
     public static final AttributeTag TableTopVerticalPositionTolerance = dict.getTagFromName("TableTopVerticalPositionTolerance");
+    public static final AttributeTag TargetMaximumDose = dict.getTagFromName("TargetMaximumDose");
     public static final AttributeTag TargetPrescriptionDose = dict.getTagFromName("TargetPrescriptionDose");
     public static final AttributeTag TemplateIdentifier = dict.getTagFromName("TemplateIdentifier");
     public static final AttributeTag TemporalPositionIdentifier = dict.getTagFromName("TemporalPositionIdentifier");
