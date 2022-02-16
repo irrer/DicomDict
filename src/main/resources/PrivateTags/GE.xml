@@ -3,7 +3,7 @@
 	<Name>Varian Medical Systems</Name>
     </Manufacturer>
     <PrivateTagList>
-        <PrivateTag name='!-- Varian private tags -->
+        <!-- GE private tags -->
         <PrivateTag name='ExtendedInterfaceData'                      group='3253' element='1000' vr='OB' fullName='Varian XML Stream'/>
         <PrivateTag name='ExtendedInterfaceLength'                    group='3253' element='1001' vr='IS' fullName='Varian Data length of XML stream'/>
         <PrivateTag name='ExtendedInterfaceFormat'                    group='3253' element='1002' vr='CS' fullName='Varian Extended Interface Format tag.  A possible falue is ExtendedIF'/>
