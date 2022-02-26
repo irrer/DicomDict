@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Regents of the University of Michigan
+ * Copyright 2022 Regents of the University of Michigan
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 
 package edu.umro.DicomDict;
 
-import com.pixelmed.dicom.AttributeTag;
-import com.pixelmed.dicom.DicomDictionary;
+import com.pixelmed.dicom.*;
+
 
 /**
  * Define an <code>AttributeTag</code> list that includes standard tags that are not included
@@ -39,7 +39,36 @@ import com.pixelmed.dicom.DicomDictionary;
  */
 @SuppressWarnings("unused")
 public class TagByNameTemplate {
-    public static final DicomDictionary dict = DicomDictionary.StandardDictionary;
+
+    public static ExtendedDictionary dict = new ExtendedDictionary();
+
+    private static AttributeTag add(String name, int group, int element, byte[] vr, String fullName, InformationEntity informationEntity) {
+        return dict.add(name, group, element, vr, fullName, informationEntity);
+    }
+
+    /**
+     * Add multiple private attributes to the dictionary.
+     *
+     * @param name              Attribute name.
+     * @param firstGroup        First group.
+     * @param lastGroup         Last group (inclusive).
+     * @param groupIncrement    Group groupIncrement.
+     * @param element           Element.
+     * @param vr                Value representation.
+     * @param fullName          Full name.
+     * @param informationEntity Information Entity.
+     * @return Attribute tag.
+     */
+    @SuppressWarnings("SameParameterValue")
+    private static AttributeTag addMultiple(String name, int firstGroup, int lastGroup, int groupIncrement, int element, byte[] vr, String fullName, InformationEntity informationEntity) {
+        for (int group = firstGroup; group <= lastGroup; group += groupIncrement) {
+            String hex = String.format("0x%04X", group);
+            dict.add(name + hex, group, element, vr, fullName + hex, informationEntity);
+        }
+
+        return new AttributeTag(firstGroup, element);
+    }
+
     /////////////////////////////
     public final AttributeTag tag = null; // force the import of AttributeTag
     /////////////////////////////

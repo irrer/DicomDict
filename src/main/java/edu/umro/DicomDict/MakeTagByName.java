@@ -32,7 +32,7 @@ public class MakeTagByName {
         File TagByNameTemplate = new File("src\\main\\java\\edu\\umro\\DicomDict\\TagByNameTemplate.java");
         String text = Utility.readFile(TagByNameTemplate);
         String[] sections = text.split(separator);
-        String prefix = sections[0].replaceAll("TagByNameTemplate", "TagByName");
+        String prefix = sections[0].replaceAll("TagByNameTemplate", "TagByName"); // .replaceAll("ExtendedDictionaryTemplate", "ExtendedDictionary");
         String suffix = sections[sections.length - 1];
 
         return new String[]{prefix, suffix};
@@ -109,7 +109,6 @@ public class MakeTagByName {
     }
 
     private static void verifyTagMembershipInStandardDictionary(SortedSet<String> set) {
-
         Iterator<String> itr = set.iterator();
 
         //noinspection WhileLoopReplaceableByForEach
@@ -121,6 +120,13 @@ public class MakeTagByName {
                 throw new RuntimeException("DICOM tag not in the standard dictionary. " + " : >>" + value + "<<");
             }
         }
+    }
+
+    private static String readPrivateTags() throws UMROException {
+        String fileName = "src\\main\\resources\\PrivateTags.java";
+        File textFile = new File(fileName);
+        String text = Utility.readFile(textFile);
+        return text;
     }
 
     public static void main(String[] args) {
@@ -147,6 +153,10 @@ public class MakeTagByName {
                 String line = "    public static final AttributeTag " + value + " = dict.getTagFromName(\"" + value + "\");\n";
                 output.append(line);
             }
+
+            output.append(readPrivateTags());
+
+            output.append("\n\n// Private tags below.\n");
 
             output.append(suffix);
 
