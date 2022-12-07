@@ -16,7 +16,9 @@
 
 package edu.umro.DicomDict;
 
-import com.pixelmed.dicom.*;
+import com.pixelmed.dicom.AttributeTag;
+import com.pixelmed.dicom.InformationEntity;
+import com.pixelmed.dicom.ValueRepresentation;
 
 
 /**
@@ -37,7 +39,6 @@ import com.pixelmed.dicom.*;
  * the names checked at compile time.  This utility fixes that.
  * </p>
  */
-@SuppressWarnings("unused")
 public class TagByName {
 
     public static ExtendedDictionary dict = new ExtendedDictionary();

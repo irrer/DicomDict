@@ -28,6 +28,7 @@ public class MakeTagByName {
      * @throws UMROException Reading files.
      */
     private static String[] extractTemplate() throws UMROException {
+        @SuppressWarnings("RegExpSimplifiable")
         String separator = "////////*";
         File TagByNameTemplate = new File("src\\main\\java\\edu\\umro\\DicomDict\\TagByNameTemplate.java");
         String text = Utility.readFile(TagByNameTemplate);
@@ -98,6 +99,7 @@ public class MakeTagByName {
         File textFile = new File(fileName);
 
         String text = Utility.readFile(textFile);
+        @SuppressWarnings("RegExpSimplifiable")
         String[] fullList = text.split("[ \r\n][ \r\n]*");
 
 
@@ -125,6 +127,7 @@ public class MakeTagByName {
     private static String readPrivateTags() throws UMROException {
         String fileName = "src\\main\\resources\\PrivateTags.java";
         File textFile = new File(fileName);
+        @SuppressWarnings("UnnecessaryLocalVariable")
         String text = Utility.readFile(textFile);
         return text;
     }

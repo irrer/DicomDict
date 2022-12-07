@@ -1,6 +1,7 @@
 package edu.umro.DicomDict;
 
-import com.pixelmed.dicom.*;
+import com.pixelmed.dicom.AttributeTag;
+import com.pixelmed.dicom.DicomDictionary;
 
 /**
  * Generate the TagByName file from the TagByName.txt file.

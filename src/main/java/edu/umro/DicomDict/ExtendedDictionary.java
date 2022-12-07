@@ -1,7 +1,9 @@
 package edu.umro.DicomDict;
 
 
-import com.pixelmed.dicom.*;
+import com.pixelmed.dicom.AttributeTag;
+import com.pixelmed.dicom.DicomDictionary;
+import com.pixelmed.dicom.InformationEntity;
 
 public class ExtendedDictionary extends DicomDictionary {
 
