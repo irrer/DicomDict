@@ -27,6 +27,9 @@ public class DictTest {
 
             System.out.println("dict: " + dict);
 
+            AttributeTag RadiationMachineName = TagByName.RadiationMachineName;
+            System.out.println("RadiationMachineName tag: " + RadiationMachineName);
+
             System.out.println("Done");
         } catch (Exception ex) {
             System.err.println("Unexpected exception: " + ex);

@@ -39,6 +39,7 @@ import com.pixelmed.dicom.ValueRepresentation;
  * the names checked at compile time.  This utility fixes that.
  * </p>
  */
+@SuppressWarnings("unused")
 public class TagByName {
 
     public static ExtendedDictionary dict = new ExtendedDictionary();
@@ -70,7 +71,7 @@ public class TagByName {
         return new AttributeTag(firstGroup, element);
     }
 
-
+    
     public static final AttributeTag AbortFlag = dict.getTagFromName("AbortFlag");
     public static final AttributeTag AccessionNumber = dict.getTagFromName("AccessionNumber");
     public static final AttributeTag AccessoryCode = dict.getTagFromName("AccessoryCode");
@@ -1154,6 +1155,7 @@ public class TagByName {
     public static final AttributeTag ExpectedTimePoints = add("ExpectedTimePoints", 0x0043, 0x107A, ValueRepresentation.US, "ExpectedTimePoints", InformationEntity.INSTANCE);
     public static final AttributeTag RegressorValues = add("RegressorValues", 0x0043, 0x107B, ValueRepresentation.FL, "RegressorValues", InformationEntity.INSTANCE);
     */
+    
 
 
 // Private tags below.
