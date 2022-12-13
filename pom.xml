@@ -51,7 +51,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> <version>3.10.1</version>
                 <configuration>
-                    <!-- With no configuration, this pulls in the given maven-compiler-plugin version. -->
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
 
