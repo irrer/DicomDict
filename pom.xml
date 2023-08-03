@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.umro</groupId>
     <artifactId>DicomDict</artifactId>
-    <version>2.2</version>
+    <version>2.3</version>
     <!--
     Note:
         install will build the jar with dependencies and put it the target directory

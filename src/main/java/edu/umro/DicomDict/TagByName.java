@@ -30,7 +30,6 @@ import com.pixelmed.dicom.ValueRepresentation;
  * <p>
  * import com.pixelmed.dicom.TagFromName;  // change from this old way
  * import edu.umro.TagFromName;            // to this new way
- *
  * </p>
  * <p>
  * <p>
@@ -77,10 +76,14 @@ public class TagByName {
     public static final AttributeTag AccessoryCode = dict.getTagFromName("AccessoryCode");
     public static final AttributeTag AcquisitionDate = dict.getTagFromName("AcquisitionDate");
     public static final AttributeTag AcquisitionDateTime = dict.getTagFromName("AcquisitionDateTime");
+    public static final AttributeTag AcquisitionDuration = dict.getTagFromName("AcquisitionDuration");
     public static final AttributeTag AcquisitionMatrix = dict.getTagFromName("AcquisitionMatrix");
     public static final AttributeTag AcquisitionNumber = dict.getTagFromName("AcquisitionNumber");
     public static final AttributeTag AcquisitionTime = dict.getTagFromName("AcquisitionTime");
     public static final AttributeTag AcquisitionType = dict.getTagFromName("AcquisitionType");
+    public static final AttributeTag AdditionalPatientHistory = dict.getTagFromName("AdditionalPatientHistory");
+    public static final AttributeTag AdmittingDiagnosesDescription = dict.getTagFromName("AdmittingDiagnosesDescription");
+    public static final AttributeTag Allergies = dict.getTagFromName("Allergies");
     public static final AttributeTag AngioFlag = dict.getTagFromName("AngioFlag");
     public static final AttributeTag AngularPosition = dict.getTagFromName("AngularPosition");
     public static final AttributeTag ApplicatorApertureShape = dict.getTagFromName("ApplicatorApertureShape");
@@ -92,6 +95,7 @@ public class TagByName {
     public static final AttributeTag ApprovalStatus = dict.getTagFromName("ApprovalStatus");
     public static final AttributeTag AxisLabels = dict.getTagFromName("AxisLabels");
     public static final AttributeTag AxisUnits = dict.getTagFromName("AxisUnits");
+    public static final AttributeTag B1rms = dict.getTagFromName("B1rms");
     public static final AttributeTag BeamDeliveryDurationLimit = dict.getTagFromName("BeamDeliveryDurationLimit");
     public static final AttributeTag BeamDescription = dict.getTagFromName("BeamDescription");
     public static final AttributeTag BeamDose = dict.getTagFromName("BeamDose");
@@ -136,6 +140,7 @@ public class TagByName {
     public static final AttributeTag CodingSchemeVersion = dict.getTagFromName("CodingSchemeVersion");
     public static final AttributeTag Columns = dict.getTagFromName("Columns");
     public static final AttributeTag CommentsOnThePerformedProcedureStep = dict.getTagFromName("CommentsOnThePerformedProcedureStep");
+    public static final AttributeTag CommentsOnTheScheduledProcedureStep = dict.getTagFromName("CommentsOnTheScheduledProcedureStep");
     public static final AttributeTag CompletionFlag = dict.getTagFromName("CompletionFlag");
     public static final AttributeTag ConceptCodeSequence = dict.getTagFromName("ConceptCodeSequence");
     public static final AttributeTag ConceptNameCodeSequence = dict.getTagFromName("ConceptNameCodeSequence");
@@ -146,6 +151,7 @@ public class TagByName {
     public static final AttributeTag ContentSequence = dict.getTagFromName("ContentSequence");
     public static final AttributeTag ContentTemplateSequence = dict.getTagFromName("ContentTemplateSequence");
     public static final AttributeTag ContentTime = dict.getTagFromName("ContentTime");
+    public static final AttributeTag ContextGroupExtensionFlag = dict.getTagFromName("ContextGroupExtensionFlag");
     public static final AttributeTag ContextGroupIdentificationSequence = dict.getTagFromName("ContextGroupIdentificationSequence");
     public static final AttributeTag ContextGroupVersion = dict.getTagFromName("ContextGroupVersion");
     public static final AttributeTag ContextIdentifier = dict.getTagFromName("ContextIdentifier");
@@ -155,6 +161,7 @@ public class TagByName {
     public static final AttributeTag ContourGeometricType = dict.getTagFromName("ContourGeometricType");
     public static final AttributeTag ContourImageSequence = dict.getTagFromName("ContourImageSequence");
     public static final AttributeTag ContourSequence = dict.getTagFromName("ContourSequence");
+    public static final AttributeTag ContrastBolusAgent = dict.getTagFromName("ContrastBolusAgent");
     public static final AttributeTag ControlPointDeliverySequence = dict.getTagFromName("ControlPointDeliverySequence");
     public static final AttributeTag ControlPointIndex = dict.getTagFromName("ControlPointIndex");
     public static final AttributeTag ControlPointSequence = dict.getTagFromName("ControlPointSequence");
@@ -188,6 +195,12 @@ public class TagByName {
     public static final AttributeTag DeliveredTreatmentTime = dict.getTagFromName("DeliveredTreatmentTime");
     public static final AttributeTag DeliveryMaximumDose = dict.getTagFromName("DeliveryMaximumDose");
     public static final AttributeTag DeviceSerialNumber = dict.getTagFromName("DeviceSerialNumber");
+    public static final AttributeTag DiffusionBValue = dict.getTagFromName("DiffusionBValue");
+    public static final AttributeTag DiffusionGradientOrientation = dict.getTagFromName("DiffusionGradientOrientation");
+    public static final AttributeTag DigitalImageFormatAcquired = dict.getTagFromName("DigitalImageFormatAcquired");
+    public static final AttributeTag DisplayedAreaBottomRightHandCorner = dict.getTagFromName("DisplayedAreaBottomRightHandCorner");
+    public static final AttributeTag DisplayedAreaSelectionSequence = dict.getTagFromName("DisplayedAreaSelectionSequence");
+    public static final AttributeTag DisplayedAreaTopLeftHandCorner = dict.getTagFromName("DisplayedAreaTopLeftHandCorner");
     public static final AttributeTag DistanceSourceToDetector = dict.getTagFromName("DistanceSourceToDetector");
     public static final AttributeTag DistanceSourceToPatient = dict.getTagFromName("DistanceSourceToPatient");
     public static final AttributeTag DoseGridScaling = dict.getTagFromName("DoseGridScaling");
@@ -234,8 +247,13 @@ public class TagByName {
     public static final AttributeTag GantryDetectorTilt = dict.getTagFromName("GantryDetectorTilt");
     public static final AttributeTag GantryRotationDirection = dict.getTagFromName("GantryRotationDirection");
     public static final AttributeTag GeneratorPower = dict.getTagFromName("GeneratorPower");
+    public static final AttributeTag GraphicLayer = dict.getTagFromName("GraphicLayer");
+    public static final AttributeTag GraphicLayerOrder = dict.getTagFromName("GraphicLayerOrder");
+    public static final AttributeTag GraphicLayerSequence = dict.getTagFromName("GraphicLayerSequence");
     public static final AttributeTag GridFrameOffsetVector = dict.getTagFromName("GridFrameOffsetVector");
+    public static final AttributeTag HeartRate = dict.getTagFromName("HeartRate");
     public static final AttributeTag HighBit = dict.getTagFromName("HighBit");
+    public static final AttributeTag HighRRValue = dict.getTagFromName("HighRRValue");
     public static final AttributeTag ImageComments = dict.getTagFromName("ImageComments");
     public static final AttributeTag ImageOrientationPatient = dict.getTagFromName("ImageOrientationPatient");
     public static final AttributeTag ImagePlanePixelSpacing = dict.getTagFromName("ImagePlanePixelSpacing");
@@ -244,21 +262,33 @@ public class TagByName {
     public static final AttributeTag ImagedNucleus = dict.getTagFromName("ImagedNucleus");
     public static final AttributeTag ImagingDeviceSpecificAcquisitionParameters = dict.getTagFromName("ImagingDeviceSpecificAcquisitionParameters");
     public static final AttributeTag ImagingFrequency = dict.getTagFromName("ImagingFrequency");
+    public static final AttributeTag ImagingServiceRequestComments = dict.getTagFromName("ImagingServiceRequestComments");
     public static final AttributeTag ImplementationClassUID = dict.getTagFromName("ImplementationClassUID");
     public static final AttributeTag ImplementationVersionName = dict.getTagFromName("ImplementationVersionName");
     public static final AttributeTag InPlanePhaseEncodingDirection = dict.getTagFromName("InPlanePhaseEncodingDirection");
     public static final AttributeTag InstanceCreationDate = dict.getTagFromName("InstanceCreationDate");
     public static final AttributeTag InstanceCreationTime = dict.getTagFromName("InstanceCreationTime");
+    public static final AttributeTag InstanceCreatorUID = dict.getTagFromName("InstanceCreatorUID");
     public static final AttributeTag InstanceNumber = dict.getTagFromName("InstanceNumber");
     public static final AttributeTag InstitutionAddress = dict.getTagFromName("InstitutionAddress");
     public static final AttributeTag InstitutionName = dict.getTagFromName("InstitutionName");
     public static final AttributeTag InstitutionalDepartmentName = dict.getTagFromName("InstitutionalDepartmentName");
+    public static final AttributeTag IntervalsAcquired = dict.getTagFromName("IntervalsAcquired");
+    public static final AttributeTag IntervalsRejected = dict.getTagFromName("IntervalsRejected");
+    public static final AttributeTag InversionTime = dict.getTagFromName("InversionTime");
     public static final AttributeTag IrradiationEventUID = dict.getTagFromName("IrradiationEventUID");
     public static final AttributeTag IsocenterPosition = dict.getTagFromName("IsocenterPosition");
+    public static final AttributeTag IssueDateOfImagingServiceRequest = dict.getTagFromName("IssueDateOfImagingServiceRequest");
+    public static final AttributeTag IssueTimeOfImagingServiceRequest = dict.getTagFromName("IssueTimeOfImagingServiceRequest");
+    public static final AttributeTag IssuerOfPatientID = dict.getTagFromName("IssuerOfPatientID");
     public static final AttributeTag KVP = dict.getTagFromName("KVP");
+    public static final AttributeTag LUTExplanation = dict.getTagFromName("LUTExplanation");
+    public static final AttributeTag LUTLabel = dict.getTagFromName("LUTLabel");
     public static final AttributeTag LargestImagePixelValue = dict.getTagFromName("LargestImagePixelValue");
+    public static final AttributeTag Laterality = dict.getTagFromName("Laterality");
     public static final AttributeTag LeafJawPositions = dict.getTagFromName("LeafJawPositions");
     public static final AttributeTag LeafPositionBoundaries = dict.getTagFromName("LeafPositionBoundaries");
+    public static final AttributeTag LowRRValue = dict.getTagFromName("LowRRValue");
     public static final AttributeTag MRAcquisitionType = dict.getTagFromName("MRAcquisitionType");
     public static final AttributeTag MagneticFieldStrength = dict.getTagFromName("MagneticFieldStrength");
     public static final AttributeTag Manufacturer = dict.getTagFromName("Manufacturer");
@@ -274,6 +304,7 @@ public class TagByName {
     public static final AttributeTag MeasurementUnitsCodeSequence = dict.getTagFromName("MeasurementUnitsCodeSequence");
     public static final AttributeTag MediaStorageSOPClassUID = dict.getTagFromName("MediaStorageSOPClassUID");
     public static final AttributeTag MediaStorageSOPInstanceUID = dict.getTagFromName("MediaStorageSOPInstanceUID");
+    public static final AttributeTag MedicalAlerts = dict.getTagFromName("MedicalAlerts");
     public static final AttributeTag MetersetExposure = dict.getTagFromName("MetersetExposure");
     public static final AttributeTag Modality = dict.getTagFromName("Modality");
     public static final AttributeTag NominalBeamEnergy = dict.getTagFromName("NominalBeamEnergy");
@@ -295,17 +326,30 @@ public class TagByName {
     public static final AttributeTag NumberOfPhaseEncodingSteps = dict.getTagFromName("NumberOfPhaseEncodingSteps");
     public static final AttributeTag NumberOfPoints = dict.getTagFromName("NumberOfPoints");
     public static final AttributeTag NumberOfRemainingSuboperations = dict.getTagFromName("NumberOfRemainingSuboperations");
+    public static final AttributeTag NumberOfTemporalPositions = dict.getTagFromName("NumberOfTemporalPositions");
     public static final AttributeTag NumberOfWarningSuboperations = dict.getTagFromName("NumberOfWarningSuboperations");
     public static final AttributeTag NumberOfWedges = dict.getTagFromName("NumberOfWedges");
     public static final AttributeTag NumericValue = dict.getTagFromName("NumericValue");
     public static final AttributeTag NumericValueQualifierCodeSequence = dict.getTagFromName("NumericValueQualifierCodeSequence");
     public static final AttributeTag ObservationNumber = dict.getTagFromName("ObservationNumber");
+    public static final AttributeTag Occupation = dict.getTagFromName("Occupation");
     public static final AttributeTag OperatorsName = dict.getTagFromName("OperatorsName");
+    public static final AttributeTag OrderCallbackPhoneNumber = dict.getTagFromName("OrderCallbackPhoneNumber");
+    public static final AttributeTag OrderEntererLocation = dict.getTagFromName("OrderEntererLocation");
     public static final AttributeTag OrganAtRiskMaximumDose = dict.getTagFromName("OrganAtRiskMaximumDose");
     public static final AttributeTag OtherPatientIDs = dict.getTagFromName("OtherPatientIDs");
+    public static final AttributeTag OverlayActivationLayer = dict.getTagFromName("OverlayActivationLayer");
+    public static final AttributeTag OverlayBitPosition = dict.getTagFromName("OverlayBitPosition");
+    public static final AttributeTag OverlayBitsAllocated = dict.getTagFromName("OverlayBitsAllocated");
+    public static final AttributeTag OverlayColumns = dict.getTagFromName("OverlayColumns");
+    public static final AttributeTag OverlayData = dict.getTagFromName("OverlayData");
+    public static final AttributeTag OverlayOrigin = dict.getTagFromName("OverlayOrigin");
+    public static final AttributeTag OverlayRows = dict.getTagFromName("OverlayRows");
+    public static final AttributeTag OverlayType = dict.getTagFromName("OverlayType");
     public static final AttributeTag PatientAge = dict.getTagFromName("PatientAge");
     public static final AttributeTag PatientBirthDate = dict.getTagFromName("PatientBirthDate");
     public static final AttributeTag PatientBirthTime = dict.getTagFromName("PatientBirthTime");
+    public static final AttributeTag PatientComments = dict.getTagFromName("PatientComments");
     public static final AttributeTag PatientID = dict.getTagFromName("PatientID");
     public static final AttributeTag PatientName = dict.getTagFromName("PatientName");
     public static final AttributeTag PatientOrientation = dict.getTagFromName("PatientOrientation");
@@ -314,18 +358,27 @@ public class TagByName {
     public static final AttributeTag PatientSetupSequence = dict.getTagFromName("PatientSetupSequence");
     public static final AttributeTag PatientSex = dict.getTagFromName("PatientSex");
     public static final AttributeTag PatientSize = dict.getTagFromName("PatientSize");
+    public static final AttributeTag PatientState = dict.getTagFromName("PatientState");
     public static final AttributeTag PatientSupportAngle = dict.getTagFromName("PatientSupportAngle");
     public static final AttributeTag PatientSupportAngleTolerance = dict.getTagFromName("PatientSupportAngleTolerance");
     public static final AttributeTag PatientSupportRotationDirection = dict.getTagFromName("PatientSupportRotationDirection");
+    public static final AttributeTag PatientTransportArrangements = dict.getTagFromName("PatientTransportArrangements");
     public static final AttributeTag PatientWeight = dict.getTagFromName("PatientWeight");
     public static final AttributeTag PercentPhaseFieldOfView = dict.getTagFromName("PercentPhaseFieldOfView");
     public static final AttributeTag PercentSampling = dict.getTagFromName("PercentSampling");
+    public static final AttributeTag PerformedLocation = dict.getTagFromName("PerformedLocation");
     public static final AttributeTag PerformedProcedureCodeSequence = dict.getTagFromName("PerformedProcedureCodeSequence");
     public static final AttributeTag PerformedProcedureStepDescription = dict.getTagFromName("PerformedProcedureStepDescription");
+    public static final AttributeTag PerformedProcedureStepEndDate = dict.getTagFromName("PerformedProcedureStepEndDate");
+    public static final AttributeTag PerformedProcedureStepEndTime = dict.getTagFromName("PerformedProcedureStepEndTime");
     public static final AttributeTag PerformedProcedureStepID = dict.getTagFromName("PerformedProcedureStepID");
     public static final AttributeTag PerformedProcedureStepStartDate = dict.getTagFromName("PerformedProcedureStepStartDate");
     public static final AttributeTag PerformedProcedureStepStartTime = dict.getTagFromName("PerformedProcedureStepStartTime");
+    public static final AttributeTag PerformedProcedureStepStatus = dict.getTagFromName("PerformedProcedureStepStatus");
+    public static final AttributeTag PerformedProcedureTypeDescription = dict.getTagFromName("PerformedProcedureTypeDescription");
     public static final AttributeTag PerformedProtocolCodeSequence = dict.getTagFromName("PerformedProtocolCodeSequence");
+    public static final AttributeTag PerformedStationAETitle = dict.getTagFromName("PerformedStationAETitle");
+    public static final AttributeTag PerformedStationName = dict.getTagFromName("PerformedStationName");
     public static final AttributeTag PerformingPhysicianName = dict.getTagFromName("PerformingPhysicianName");
     public static final AttributeTag PersonName = dict.getTagFromName("PersonName");
     public static final AttributeTag PhotometricInterpretation = dict.getTagFromName("PhotometricInterpretation");
@@ -341,8 +394,16 @@ public class TagByName {
     public static final AttributeTag PlannedVerificationImageSequence = dict.getTagFromName("PlannedVerificationImageSequence");
     public static final AttributeTag PositionReferenceIndicator = dict.getTagFromName("PositionReferenceIndicator");
     public static final AttributeTag PositionerMotion = dict.getTagFromName("PositionerMotion");
+    public static final AttributeTag PreMedication = dict.getTagFromName("PreMedication");
+    public static final AttributeTag PregnancyStatus = dict.getTagFromName("PregnancyStatus");
+    public static final AttributeTag PresentationCreationDate = dict.getTagFromName("PresentationCreationDate");
+    public static final AttributeTag PresentationCreationTime = dict.getTagFromName("PresentationCreationTime");
+    public static final AttributeTag PresentationLUTShape = dict.getTagFromName("PresentationLUTShape");
+    public static final AttributeTag PresentationPixelSpacing = dict.getTagFromName("PresentationPixelSpacing");
+    public static final AttributeTag PresentationSizeMode = dict.getTagFromName("PresentationSizeMode");
     public static final AttributeTag PrimaryDosimeterUnit = dict.getTagFromName("PrimaryDosimeterUnit");
     public static final AttributeTag PrimaryFluenceModeSequence = dict.getTagFromName("PrimaryFluenceModeSequence");
+    public static final AttributeTag ProcedureCodeSequence = dict.getTagFromName("ProcedureCodeSequence");
     public static final AttributeTag ProtocolName = dict.getTagFromName("ProtocolName");
     public static final AttributeTag PurposeOfReferenceCodeSequence = dict.getTagFromName("PurposeOfReferenceCodeSequence");
     public static final AttributeTag QueryRetrieveLevel = dict.getTagFromName("QueryRetrieveLevel");
@@ -378,8 +439,15 @@ public class TagByName {
     public static final AttributeTag RadiationMachineName = dict.getTagFromName("RadiationMachineName");
     public static final AttributeTag RadiationMachineSAD = dict.getTagFromName("RadiationMachineSAD");
     public static final AttributeTag RadiationType = dict.getTagFromName("RadiationType");
+    public static final AttributeTag RealWorldValueFirstValueMapped = dict.getTagFromName("RealWorldValueFirstValueMapped");
+    public static final AttributeTag RealWorldValueIntercept = dict.getTagFromName("RealWorldValueIntercept");
+    public static final AttributeTag RealWorldValueLastValueMapped = dict.getTagFromName("RealWorldValueLastValueMapped");
+    public static final AttributeTag RealWorldValueMappingSequence = dict.getTagFromName("RealWorldValueMappingSequence");
+    public static final AttributeTag RealWorldValueSlope = dict.getTagFromName("RealWorldValueSlope");
     public static final AttributeTag ReasonForRequestedProcedureCodeSequence = dict.getTagFromName("ReasonForRequestedProcedureCodeSequence");
+    public static final AttributeTag ReasonForTheImagingServiceRequest = dict.getTagFromName("ReasonForTheImagingServiceRequest");
     public static final AttributeTag ReasonForTheRequestedProcedure = dict.getTagFromName("ReasonForTheRequestedProcedure");
+    public static final AttributeTag ReceiveCoilName = dict.getTagFromName("ReceiveCoilName");
     public static final AttributeTag RecommendedDisplayFrameRate = dict.getTagFromName("RecommendedDisplayFrameRate");
     public static final AttributeTag ReconstructionDiameter = dict.getTagFromName("ReconstructionDiameter");
     public static final AttributeTag ReconstructionTargetCenterPatient = dict.getTagFromName("ReconstructionTargetCenterPatient");
@@ -416,8 +484,15 @@ public class TagByName {
     public static final AttributeTag RepeatFractionCycleLength = dict.getTagFromName("RepeatFractionCycleLength");
     public static final AttributeTag RepetitionTime = dict.getTagFromName("RepetitionTime");
     public static final AttributeTag ReportedValuesOrigin = dict.getTagFromName("ReportedValuesOrigin");
+    public static final AttributeTag RequestAttributesSequence = dict.getTagFromName("RequestAttributesSequence");
+    public static final AttributeTag RequestedContrastAgent = dict.getTagFromName("RequestedContrastAgent");
+    public static final AttributeTag RequestedProcedureComments = dict.getTagFromName("RequestedProcedureComments");
+    public static final AttributeTag RequestedProcedureDescription = dict.getTagFromName("RequestedProcedureDescription");
     public static final AttributeTag RequestedProcedureID = dict.getTagFromName("RequestedProcedureID");
+    public static final AttributeTag RequestedProcedureLocation = dict.getTagFromName("RequestedProcedureLocation");
+    public static final AttributeTag RequestedProcedurePriority = dict.getTagFromName("RequestedProcedurePriority");
     public static final AttributeTag RequestingPhysician = dict.getTagFromName("RequestingPhysician");
+    public static final AttributeTag RequestingService = dict.getTagFromName("RequestingService");
     public static final AttributeTag RescaleIntercept = dict.getTagFromName("RescaleIntercept");
     public static final AttributeTag RescaleSlope = dict.getTagFromName("RescaleSlope");
     public static final AttributeTag RescaleType = dict.getTagFromName("RescaleType");
@@ -434,6 +509,14 @@ public class TagByName {
     public static final AttributeTag SamplesPerPixel = dict.getTagFromName("SamplesPerPixel");
     public static final AttributeTag ScanOptions = dict.getTagFromName("ScanOptions");
     public static final AttributeTag ScanningSequence = dict.getTagFromName("ScanningSequence");
+    public static final AttributeTag ScheduledPerformingPhysicianName = dict.getTagFromName("ScheduledPerformingPhysicianName");
+    public static final AttributeTag ScheduledProcedureStepDescription = dict.getTagFromName("ScheduledProcedureStepDescription");
+    public static final AttributeTag ScheduledProcedureStepID = dict.getTagFromName("ScheduledProcedureStepID");
+    public static final AttributeTag ScheduledProtocolCodeSequence = dict.getTagFromName("ScheduledProtocolCodeSequence");
+    public static final AttributeTag SecondaryCaptureDeviceID = dict.getTagFromName("SecondaryCaptureDeviceID");
+    public static final AttributeTag SecondaryCaptureDeviceManufacturer = dict.getTagFromName("SecondaryCaptureDeviceManufacturer");
+    public static final AttributeTag SecondaryCaptureDeviceManufacturerModelName = dict.getTagFromName("SecondaryCaptureDeviceManufacturerModelName");
+    public static final AttributeTag SecondaryCaptureDeviceSoftwareVersions = dict.getTagFromName("SecondaryCaptureDeviceSoftwareVersions");
     public static final AttributeTag SequenceName = dict.getTagFromName("SequenceName");
     public static final AttributeTag SequenceVariant = dict.getTagFromName("SequenceVariant");
     public static final AttributeTag SeriesDate = dict.getTagFromName("SeriesDate");
@@ -447,6 +530,7 @@ public class TagByName {
     public static final AttributeTag SliceLocation = dict.getTagFromName("SliceLocation");
     public static final AttributeTag SliceThickness = dict.getTagFromName("SliceThickness");
     public static final AttributeTag SmallestImagePixelValue = dict.getTagFromName("SmallestImagePixelValue");
+    public static final AttributeTag SoftcopyVOILUTSequence = dict.getTagFromName("SoftcopyVOILUTSequence");
     public static final AttributeTag SoftwareVersions = dict.getTagFromName("SoftwareVersions");
     public static final AttributeTag SourceApplicationEntityTitle = dict.getTagFromName("SourceApplicationEntityTitle");
     public static final AttributeTag SourceAxisDistance = dict.getTagFromName("SourceAxisDistance");
@@ -455,6 +539,7 @@ public class TagByName {
     public static final AttributeTag SourceToBlockTrayDistance = dict.getTagFromName("SourceToBlockTrayDistance");
     public static final AttributeTag SourceToSurfaceDistance = dict.getTagFromName("SourceToSurfaceDistance");
     public static final AttributeTag SpacingBetweenSlices = dict.getTagFromName("SpacingBetweenSlices");
+    public static final AttributeTag SpecialNeeds = dict.getTagFromName("SpecialNeeds");
     public static final AttributeTag SpecificCharacterSet = dict.getTagFromName("SpecificCharacterSet");
     public static final AttributeTag SpecifiedMeterset = dict.getTagFromName("SpecifiedMeterset");
     public static final AttributeTag SpiralPitchFactor = dict.getTagFromName("SpiralPitchFactor");
@@ -469,6 +554,7 @@ public class TagByName {
     public static final AttributeTag StructureSetROISequence = dict.getTagFromName("StructureSetROISequence");
     public static final AttributeTag StructureSetTime = dict.getTagFromName("StructureSetTime");
     public static final AttributeTag StudiesContainingOtherReferencedInstancesSequence = dict.getTagFromName("StudiesContainingOtherReferencedInstancesSequence");
+    public static final AttributeTag StudyComments = dict.getTagFromName("StudyComments");
     public static final AttributeTag StudyDate = dict.getTagFromName("StudyDate");
     public static final AttributeTag StudyDescription = dict.getTagFromName("StudyDescription");
     public static final AttributeTag StudyID = dict.getTagFromName("StudyID");
@@ -515,10 +601,13 @@ public class TagByName {
     public static final AttributeTag TreatmentTerminationStatus = dict.getTagFromName("TreatmentTerminationStatus");
     public static final AttributeTag TreatmentTime = dict.getTagFromName("TreatmentTime");
     public static final AttributeTag TreatmentVerificationStatus = dict.getTagFromName("TreatmentVerificationStatus");
+    public static final AttributeTag TriggerTime = dict.getTagFromName("TriggerTime");
+    public static final AttributeTag TriggerWindow = dict.getTagFromName("TriggerWindow");
     public static final AttributeTag TypeOfData = dict.getTagFromName("TypeOfData");
     public static final AttributeTag ValueType = dict.getTagFromName("ValueType");
     public static final AttributeTag VariableFlipAngleFlag = dict.getTagFromName("VariableFlipAngleFlag");
     public static final AttributeTag VerificationFlag = dict.getTagFromName("VerificationFlag");
+    public static final AttributeTag VideoImageFormatAcquired = dict.getTagFromName("VideoImageFormatAcquired");
     public static final AttributeTag WedgeAngle = dict.getTagFromName("WedgeAngle");
     public static final AttributeTag WedgeFactor = dict.getTagFromName("WedgeFactor");
     public static final AttributeTag WedgeID = dict.getTagFromName("WedgeID");
@@ -940,8 +1029,7 @@ public class TagByName {
     public static final AttributeTag VolumeSelect = add("VolumeSelect", 0x2005, 0x144F, ValueRepresentation.CS, "VolumeSelect", InformationEntity.INSTANCE);
     public static final AttributeTag MRNrOfPatientOtherIDs = add("MRNrOfPatientOtherIDs", 0x2005, 0x1450, ValueRepresentation.SS, "MRNrOfPatientOtherIDs", InformationEntity.PATIENT);
     public static final AttributeTag ImageVelocityEncodingDirection = add("ImageVelocityEncodingDirection", 0x2005, 0x1455, ValueRepresentation.FD, "ImageVelocityEncodingDirection", InformationEntity.INSTANCE);
-    public static final AttributeTag PresentationLUTShape = add("PresentationLUTShape", 0x2050, 0x0020, ValueRepresentation.CS, "PresentationLUTShape", InformationEntity.INSTANCE);
-    
+
     /*
     // GE ----------------------------------------------------------------------
     public static final AttributeTag FullFidelity = add("FullFidelity", 0x0009, 0x1001, ValueRepresentation.LO, "FullFidelity", InformationEntity.INSTANCE);

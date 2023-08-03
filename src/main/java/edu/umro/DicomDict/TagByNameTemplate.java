@@ -18,6 +18,7 @@ package edu.umro.DicomDict;
 
 import com.pixelmed.dicom.AttributeTag;
 import com.pixelmed.dicom.InformationEntity;
+import com.pixelmed.dicom.ValueRepresentation;
 
 
 /**
@@ -29,7 +30,6 @@ import com.pixelmed.dicom.InformationEntity;
  * <p>
  * import com.pixelmed.dicom.TagFromName;  // change from this old way
  * import edu.umro.TagFromName;            // to this new way
- *
  * </p>
  * <p>
  * <p>
@@ -72,5 +72,6 @@ public class TagByNameTemplate {
 
     /////////////////////////////
     public final AttributeTag tag = null; // force the import of AttributeTag
+    public final ValueRepresentation val = null; // force the import of ValueRepresentation
     /////////////////////////////
 }

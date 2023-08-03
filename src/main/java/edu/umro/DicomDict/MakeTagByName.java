@@ -18,7 +18,6 @@ import java.util.TreeSet;
  * to add tags from other sources.
  */
 public class MakeTagByName {
-
     private static final DicomDictionary dict = new DicomDictionary();
 
     /**
@@ -35,18 +34,14 @@ public class MakeTagByName {
         String[] sections = text.split(separator);
         String prefix = sections[0].replaceAll("TagByNameTemplate", "TagByName"); // .replaceAll("ExtendedDictionaryTemplate", "ExtendedDictionary");
         String suffix = sections[sections.length - 1];
-
         return new String[]{prefix, suffix};
     }
 
     private static void addTagsFromAttributeList(AttributeList al, SortedSet<String> set) {
-
         Iterator<AttributeTag> itr = al.keySet().iterator();
-
         //noinspection WhileLoopReplaceableByForEach
         while (itr.hasNext()) {
             AttributeTag tag = itr.next();
-
             String name = dict.getNameFromTag(tag);
             if (name != null) {
                 set.add(name);
@@ -95,14 +90,10 @@ public class MakeTagByName {
      */
     private static void addTagsFromTextFile(SortedSet<String> set) throws UMROException {
         String fileName = "src\\main\\resources\\TagByName.txt";
-
         File textFile = new File(fileName);
-
         String text = Utility.readFile(textFile);
         @SuppressWarnings("RegExpSimplifiable")
         String[] fullList = text.split("[ \r\n][ \r\n]*");
-
-
         int i;
         for (i = 0; i < fullList.length; i++) {
             set.add(fullList[i]);
@@ -112,11 +103,9 @@ public class MakeTagByName {
 
     private static void verifyTagMembershipInStandardDictionary(SortedSet<String> set) {
         Iterator<String> itr = set.iterator();
-
         //noinspection WhileLoopReplaceableByForEach
         while (itr.hasNext()) {
             String value = itr.next();
-
             // test that this DICOM tag is in the standard dictionary.  (The dictionary changes occasionally.)
             if (dict.getTagFromName(value) == null) {
                 throw new RuntimeException("DICOM tag not in the standard dictionary. " + " : >>" + value + "<<");
@@ -133,21 +122,15 @@ public class MakeTagByName {
     }
 
     public static void main(String[] args) {
-
         try {
             String[] pair = extractTemplate();
             String prefix = pair[0];
             String suffix = pair[1];
-
             SortedSet<String> set = new TreeSet<>();
-
             addTagsFromTextFile(set);
             addTagsFromDicomFiles(set);
-
             verifyTagMembershipInStandardDictionary(set);
-
             Iterator<String> itr = set.iterator();
-
             StringBuilder output = new StringBuilder();
             output.append(prefix);
             output.append("\n");
@@ -156,22 +139,16 @@ public class MakeTagByName {
                 String line = "    public static final AttributeTag " + value + " = dict.getTagFromName(\"" + value + "\");\n";
                 output.append(line);
             }
-
             output.append(readPrivateTags());
-
             output.append("\n\n// Private tags below.\n");
-
             output.append(suffix);
-
             File outputFile = new File("src\\main\\java\\edu\\umro\\DicomDict\\TagByName.java");
             byte[] outputText = output.toString().getBytes(StandardCharsets.UTF_8);
             Utility.writeFile(outputFile, outputText);
             System.out.println("Done.  Output file: " + outputFile.getAbsolutePath() + "    File size: " + outputText.length + "    Number of attributes: " + set.size());
-
         } catch (Exception ex) {
             System.err.println("Unexpected exception: " + ex);
             ex.printStackTrace();
         }
-
     }
 }

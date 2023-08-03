@@ -907,7 +907,6 @@
         <VolumeSelect                               group='2005' element='144F' vr='CS' fullName='VolumeSelect'/>
         <MRNrOfPatientOtherIDs                      group='2005' element='1450' vr='SS' fullName='MRNrOfPatientOtherIDs'/>
         <ImageVelocityEncodingDirection             group='2005' element='1455' vr='FD' fullName='ImageVelocityEncodingDirection'/>
-        <PresentationLUTShape                       group='2050' element='0020' vr='CS' fullName='PresentationLUTShape'/>
 
     </PrivateTagList>
     

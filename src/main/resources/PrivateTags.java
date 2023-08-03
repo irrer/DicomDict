@@ -403,8 +403,7 @@
     public static final AttributeTag VolumeSelect = add("VolumeSelect", 0x2005, 0x144F, ValueRepresentation.CS, "VolumeSelect", InformationEntity.INSTANCE);
     public static final AttributeTag MRNrOfPatientOtherIDs = add("MRNrOfPatientOtherIDs", 0x2005, 0x1450, ValueRepresentation.SS, "MRNrOfPatientOtherIDs", InformationEntity.PATIENT);
     public static final AttributeTag ImageVelocityEncodingDirection = add("ImageVelocityEncodingDirection", 0x2005, 0x1455, ValueRepresentation.FD, "ImageVelocityEncodingDirection", InformationEntity.INSTANCE);
-    public static final AttributeTag PresentationLUTShape = add("PresentationLUTShape", 0x2050, 0x0020, ValueRepresentation.CS, "PresentationLUTShape", InformationEntity.INSTANCE);
-    
+
     /*
     // GE ----------------------------------------------------------------------
     public static final AttributeTag FullFidelity = add("FullFidelity", 0x0009, 0x1001, ValueRepresentation.LO, "FullFidelity", InformationEntity.INSTANCE);

@@ -9,8 +9,5 @@
         <module name="DicomDict" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="DicomDict" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
