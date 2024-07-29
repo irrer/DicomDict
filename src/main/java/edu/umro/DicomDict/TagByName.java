@@ -420,6 +420,7 @@ public class TagByName {
     public static final AttributeTag RTBeamLimitingDeviceType = dict.getTagFromName("RTBeamLimitingDeviceType");
     public static final AttributeTag RTImageDescription = dict.getTagFromName("RTImageDescription");
     public static final AttributeTag RTImageLabel = dict.getTagFromName("RTImageLabel");
+    public static final AttributeTag RTImageName = dict.getTagFromName("RTImageName");
     public static final AttributeTag RTImageOrientation = dict.getTagFromName("RTImageOrientation");
     public static final AttributeTag RTImagePlane = dict.getTagFromName("RTImagePlane");
     public static final AttributeTag RTImagePosition = dict.getTagFromName("RTImagePosition");
